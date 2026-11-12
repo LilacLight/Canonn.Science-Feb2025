@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Resources | Canonn Research Group</title>
+	<atom:link href="https://canonn.science/category/resources/feed/" rel="self" type="application/rss+xml" />
+	<link>https://canonn.science</link>
+	<description>Bask in our science!</description>
+	<lastBuildDate>Sun, 19 Nov 2023 13:04:17 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.16</generator>
+
+<image>
+	<url>https://canonn.science/wp-content/uploads/2017/04/cropped-biscuit-32x32.png</url>
+	<title>Resources | Canonn Research Group</title>
+	<link>https://canonn.science</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Ghost Rings</title>
+		<link>https://canonn.science/codex/cartographics/ghost-rings/</link>
+		
+		<dc:creator><![CDATA[NoFoolLikeOne]]></dc:creator>
+		<pubDate>Sun, 06 Aug 2023 12:55:36 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Research Notes]]></category>
+		<category><![CDATA[Resources]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=9244</guid>
+
+					<description><![CDATA[<p>CMDR Chewcat1 and LCU No Fool Like One Why are some large rings invisible, and Is there a definitive way to calculate whether the rings will be visible or not with just data from the Full Spectrum System Scanner(FSS)? Commander Chewcat1 set out to answer that question. The answer to this question could help us...</p>
+The post <a href="https://canonn.science/codex/cartographics/ghost-rings/">Ghost Rings</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>CMDR Chewcat1 and LCU No Fool Like One</p>
+
+
+
+<p>Why are some large rings invisible, and Is there a definitive way to calculate whether the rings will be visible or not with just data from the Full Spectrum System Scanner(FSS)? Commander Chewcat1 set out to answer that question. The answer to this question could help us to determine up front whether a shepherd moon will appear between visible rings or if very large rings will be visible at all. </p>
+
+
+
+<h2>Hypothesis:</h2>
+
+
+
+<p>Measurable properties of the ring, such as width and density can be an indicator of whether the ring will be visible of the ring. </p>
+
+
+
+<h2>Data Collection:</h2>
+
+
+
+<p>The FSS journal entries are able to record the following information about the rings. </p>
+
+
+
+<ul><li>Inner Radius in Kilometers</li><li>Outer Radius in Kilometers</li><li>Mass in Megatons</li></ul>
+
+
+
+<p>Using this data it is possible to make further calculations for density and ring width. It should be noted that the thickness of the rings is not available, consequently variation in ring thickness cannot be measured and therefore the actual density in Mt/km<sup>3</sup> cannot be calculated.  Density calculations effectively assume a uniform thickness of 1km.</p>
+
+
+
+<p>Density Mt/km<sup>2</sup> = Mass / ( (π * OuterRadius<sup>2</sup> ) &#8211; (π * InnerRadius<sup>2</sup> ) )</p>
+
+
+
+<p>Width = OuterRadius &#8211; Inner Radius</p>
+
+
+
+<p>Commander Chewcat1 gathered data on a number of expeditions and compiled the results in this sheet <a href="https://docs.google.com/spreadsheets/d/17XjYBvWBxl8BjXkUjWeHqQlkUAXDbFm6MJMxNtL6soQ/edit?usp=sharing">Large Ring Visibility</a></p>
+
+
+
+<p>Plotting the data on a scatter chart shows that there were some clear boundaries in the data, showing that visibility was dependent on both density and ring width. However this only covered around 50 bodies and only those with large rings.</p>
+
+
+
+<p><img src="https://lh6.googleusercontent.com/bMrJa9MJ5LmIRoQ2aJUiAPFxBhrJgBHRFveoMFEejINZRoXduFu-VBmi6cA_tDLhLLHOZPLugLv2A5NG8jzSB-FpP7vWmSrANNJDzn7Oy2pRfqlaZfv1rN8lLuCCQ68AyyDoY9-Ir2WG4D3bS7lF7HI" width="624" height="437"></p>
+
+
+
+<p>As can be seen from the scatter chart it appears that visibility can be assumed at 0.1 MT/km<sup>2</sup></p>
+
+
+
+<p>But we cannot predict invisibility by density alone. It looks like smaller rings can be visible at lower densities. With a great deal of data available it should be possible to create a survey to map out the boundaries of visibility further.</p>
+
+
+
+<p>It was also noted that very narrow rings only a few kilometres across could also be invisible so more data was needed for a fuller picture. </p>
+
+
+
+<p>Canonn R&amp;D supplied a new ring <a href="https://github.com/canonn-science/EDMC-RingSurvey#readme" title="EDMC-RingSurvey">survey plugin module</a> for pilots to install on their ship. Using the observed values for width and density the plugin provided an interface where the pilots could confirm if the rings were visible or not. This data was sent to a <a href="https://docs.google.com/spreadsheets/d/1Kaf8wQtvRvf_BQCSpylLc938IIu8oOBlmrvGxYnTfqU/edit#gid=1465960304" title="Ring Survey Responses">spreadsheet </a>for analysis. To date over 4000 observations have been recorded. </p>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://canonn.science/wp-content/uploads/2023/08/help-1024x576.png" alt="" class="wp-image-9270" srcset="https://canonn.science/wp-content/uploads/2023/08/help-1024x576.png 1024w, https://canonn.science/wp-content/uploads/2023/08/help-300x169.png 300w, https://canonn.science/wp-content/uploads/2023/08/help-600x338.png 600w, https://canonn.science/wp-content/uploads/2023/08/help-768x432.png 768w, https://canonn.science/wp-content/uploads/2023/08/help.png 1048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Ring Survey Plugin</figcaption></figure>
+
+
+
+<p>Canonn pilots were further more, directed to scan rings specifically in the range of width and density where the transition from visible to invisible was expected to occur based on the initial data set, so that more accurate data could be gathered to find the transition points. The data was also plotted on a scatter chart on a log scale. </p>
+
+
+
+<iframe width="716" height="443" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRNgxlzHDJ-T3ChbYFumR9mhD3dFcgWw_x1UswzRSrxDwbfmtE_7iQlD_BTX_fllvcXlrN9aOoWry4r/pubchart?oid=240405452&amp;format=interactive"></iframe>
+
+
+
+<p>As can be seen, the initial conclusions have more or less held, however the boundaries do have some overlap and there appear to be several outliers that do not fit at all. It remains to be seen if the outliers are due to errors in recording the data. There are instances, particularly with very narrow width rings, where they can be invisible if not viewed from the correct angle and the right lighting conditions. It is also possible that commanders assessing ring visibility from the FSS screen are not counting the rings correctly. This is particularly an issue with very large C rings which may not be visible in the FSS due to being too far from the body to display within the field of view (as reported by Cmdr Eahlstan).</p>
+
+
+
+<p>Another reason for the overlapping boundaries may be because the FSS records data in scientific notation, which effectively truncates the values. The bigger the magniture of the inner and outer radius, the higher the margin of error.</p>
+
+
+
+<p>There are many different types of rings, but for this experiment they can be broken down into two basic categories, solid rings and spaced rings. Solid rings have their mass more evenly distributed throughout but will still have some banding and be one continuous ring(fig 1). Spaced rings on the other hand will have their mass spread out into separated rings, but will still be classified as a single ring, letting their mass be lower while still being visible(fig 2). It is possible that this variation in density within the body of the ring itself also has a bearing on the visibility. </p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/_dVMpMx_R2sP4Aow6Sc_sZ5tug8ff5566zQFOSPwYkCaUFrN8q6hBTl1mLJ4P9luZtXM7ZrfkTB3-vQ37-v3O3sVcSNl1fqKe3e7iG7u37NAn-HlJh27n9EKB8C96OMIqEaalhKaKVjhEgNgS-cvjOM" alt=""/></figure>
+
+
+
+<p>Figure 1: Solid rocky ring with banding near the center.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh6.googleusercontent.com/QBt3g_D7l9a352voPVqCUrYGoABjUxF5w2Vsws909MN_qcWzMRmV49BNALB_B7zYhBltsFRKR2JNyM5FHHeh0MLYjDrhiwOMz2Ja5XkMnqS5adsWtE4lTyVWZYYZ6iA8LuYNQwya-r4gkdl2_2yRZEg" alt=""/></figure>
+
+
+
+<p>Figure 2: Spaced rocky ring with large gaps.</p>
+
+
+
+<h2>Conclusion:</h2>
+
+
+
+<p>Due to the many variations rings can come in, it is unlikely that there is a 100% accurate way to determine what a ring will look like without a direct visual inspection. But using the data collected so far we can see that anything with a width greater than 1.6 million km and a density less than 0.06 Mt/Km2 will be invisible. Also rings that are less than 6km in width are likely to be invisible,</p>
+
+
+
+<p>Further analysis is needed and the outliers need to be revisited to confirm whether the data is accurate.  Further analysis and observations could be undertaken to identify whether there are any mesurable criteria that can determind whether rings will be spare or uniform in density. </p>
+
+
+
+<p>We would like to encourage the entire scientific community to inspect the data gathered and formulate their own conclusions.</p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/UzaFFEx0AkSVxzaCn7ONduX0XcVtdWzx2mlV31yBl8ctJPVuFrTx_ta3Rz4j9USu1eFdJg8oN15FQxINe8yUj8pgxIcZ9o4hsEGvuyLVroN0WNKkXJEnmDnrcOURetljacVw9pQM8XBYE4uyebnypFI" alt=""/></figure>
+
+
+
+<p>View of large spaced rocky ring of Chraufai ND-J d9-2 body A4</p>
+
+
+
+<p></p>
+
+
+
+<p></p>The post <a href="https://canonn.science/codex/cartographics/ghost-rings/">Ghost Rings</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Get Your Name In The Codex</title>
+		<link>https://canonn.science/codex/get-your-name-in-the-codex/</link>
+		
+		<dc:creator><![CDATA[NoFoolLikeOne]]></dc:creator>
+		<pubDate>Mon, 29 May 2023 00:31:12 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Geology & Surface Organics]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Biology]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=9194</guid>
+
+					<description><![CDATA[<p>Commander Marxanthius is one of our dedicated catalogers. He does a weekly audit of the Codex against our records to ensure that we are up to date and has a unique knowledge of the codex. He doesn&#8217;t just fly a desk he is also one of the pioneers of the Canonn Challenge and has visited...</p>
+The post <a href="https://canonn.science/codex/get-your-name-in-the-codex/">Get Your Name In The Codex</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<blockquote class="wp-block-quote"><p>Commander Marxanthius is one of our dedicated catalogers. He does a weekly audit of the Codex against our records to ensure that we are up to date and has a unique knowledge of the codex. He doesn&#8217;t just fly a desk he is also one of the pioneers of the <a href="https://canonn.science/codex/canonn-challenge">Canonn Challenge</a> and has visited one of everything. He has written a guide to getting your name in the codex.</p></blockquote>
+
+
+
+<p>So, you want to get your name in the codex eh?&nbsp; Up along all those other great explorers?&nbsp; Well, I don&#8217;t think you will catch them on the number of discoveries, but maybe, just maybe you might be able to slap your name on one of the biological variants.&nbsp; Hopefully it isn&#8217;t that Stratum Araneamus &#8211; Emerald, that one has already been claimed and it looks like greeny brown slippery, bubbly…..</p>
+
+
+
+<p>As of 3309-05-22, there are an estimated 7,000 codex entries left to discover, and with an average of 30 discoveries each week you&#8217;ve got nearly 4.5 years to find that elusive title.</p>
+
+
+
+<h2>A little bit about codex Odyssey Bios and Codex Entries</h2>
+
+
+
+<p>All biologies have certain spawn requirements, like gravity, temperature and atmosphere.&nbsp; One specific spawn requirement separates biologies into two categories, Star or Mineral.&nbsp; Mineral based biologies are dependent on the minerals in the planet and aren’t reliant on the star types in the system.&nbsp; These are often discovered first in a region as their requirements are less strict.&nbsp; The other type is based on the stars in the system, and not just the primary star.&nbsp; Secondary and planetary stars provide a potential for their biologies to spawn.&nbsp; Often Y class stars are not going to provide the necessary goldilocks zones for biologicals, but when combined with other warmer primary stars the chances increase. This makes hunting for certain star types challenging, as the galaxy map filters by primary star alone.&nbsp;</p>
+
+
+
+<p>What about those Nebula based biologies?&nbsp; I thought you wanted to get your name on a codex entry?</p>
+
+
+
+<p><strong><em>Hunting for Star based biologies in areas that still have mineral based biologies is probably the best method to increase your chances of a codex entry, even if it is just tripping over a mineral based one.</em></strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://canonn.science/wp-content/uploads/2023/05/image-5-1024x297.png" alt="" class="wp-image-9220" srcset="https://canonn.science/wp-content/uploads/2023/05/image-5-1024x297.png 1024w, https://canonn.science/wp-content/uploads/2023/05/image-5-300x87.png 300w, https://canonn.science/wp-content/uploads/2023/05/image-5-600x174.png 600w, https://canonn.science/wp-content/uploads/2023/05/image-5-768x223.png 768w, https://canonn.science/wp-content/uploads/2023/05/image-5.png 1809w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><a href="https://canonn-science.github.io/bioforge/?entryid=Stratum%20Laminamus%20-%20Green">Stratum Laminamus &#8211; Green Regions on Bioforge</a></figcaption></figure>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+
+
+
+<p> </p>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://canonn.science/wp-content/uploads/2023/05/image-11-1024x297.png" alt="" class="wp-image-9227" srcset="https://canonn.science/wp-content/uploads/2023/05/image-11-1024x297.png 1024w, https://canonn.science/wp-content/uploads/2023/05/image-11-300x87.png 300w, https://canonn.science/wp-content/uploads/2023/05/image-11-600x174.png 600w, https://canonn.science/wp-content/uploads/2023/05/image-11-768x223.png 768w, https://canonn.science/wp-content/uploads/2023/05/image-11.png 1803w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><a href="https://canonn-science.github.io/bioforge/?entryid=Aleoida%20Spica%20-%20Green">Aleoida Spica &#8211; Green Regions on Bioforge</a></figcaption></figure>
+
+
+
+<p>Codex entries are based on each region. Not all biologies can be found in each region, as some are restricted to or from certain arms of the galaxies. Stratum Laminamus &#8211; Green as an example, is only found in a small part of the galaxy, unlike Aleoida Spica &#8211; Green which just doesn&#8217;t appear in one arm.</p>
+
+
+
+<p>The following biologies are region locked to certain arms of the galaxy.</p>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://canonn.science/wp-content/uploads/2023/05/image-12-1024x1024.png" alt="" class="wp-image-9229" srcset="https://canonn.science/wp-content/uploads/2023/05/image-12.png 1024w, https://canonn.science/wp-content/uploads/2023/05/image-12-300x300.png 300w, https://canonn.science/wp-content/uploads/2023/05/image-12-150x150.png 150w, https://canonn.science/wp-content/uploads/2023/05/image-12-350x350.png 350w, https://canonn.science/wp-content/uploads/2023/05/image-12-600x600.png 600w, https://canonn.science/wp-content/uploads/2023/05/image-12-768x768.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+</div></div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+
+
+
+<p><strong><em>Hunting for stuff that shouldn’t spawn, will lead to disappointment.</em></strong></p>
+
+
+
+<p><strong>NOTE:</strong> <em>&nbsp;The local ships computers log files will record a different region than what the Pilot’s Federation computers will accept and record in the Codex when a discovery is made on the edge of some regions.&nbsp; This can lead to some discrepancy between what is in the Canonn Bioforge, which is based on CMDR log files and the Codex which is based on shoddy data and shady deals.</em></p>
+
+
+
+<h2>Which region to hunt in?</h2>
+
+
+
+<p>Picking which region to hunt in is going to be based on a number of factors, but really it is going to be the one region that has the most number of potential biologies.</p>
+
+
+
+<p>The following link will show a chart on how many biologies are still yet to be discovered in that region, based on their mineral and star type.&nbsp; Across the bottom, it is ordered by the grand total, so as of writing this, Aquilia&#8217;s Halo has the most potential as 282 and Inner Orion Spur has the least at 44.</p>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://canonn.science/wp-content/uploads/2023/05/image-2-1024x512.png" alt="" class="wp-image-9209" srcset="https://canonn.science/wp-content/uploads/2023/05/image-2-1024x512.png 1024w, https://canonn.science/wp-content/uploads/2023/05/image-2-300x150.png 300w, https://canonn.science/wp-content/uploads/2023/05/image-2-600x300.png 600w, https://canonn.science/wp-content/uploads/2023/05/image-2-768x384.png 768w, https://canonn.science/wp-content/uploads/2023/05/image-2.png 1406w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><a href="https://docs.google.com/spreadsheets/d/1TpPZUFd61KUQWy1sV8VhScZiVbRWJ435wTN8xjN0Qv0/edit?usp=sharing">Elite Dangerous Undiscovered Biology Count</a></figcaption></figure>
+
+
+
+<p>In a more graphical format, here are the numbers matched to their regions as of 3309-05-22</p>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://canonn.science/wp-content/uploads/2023/05/image-13.png" alt="" class="wp-image-9232" srcset="https://canonn.science/wp-content/uploads/2023/05/image-13.png 624w, https://canonn.science/wp-content/uploads/2023/05/image-13-300x300.png 300w, https://canonn.science/wp-content/uploads/2023/05/image-13-150x150.png 150w, https://canonn.science/wp-content/uploads/2023/05/image-13-350x350.png 350w, https://canonn.science/wp-content/uploads/2023/05/image-13-600x602.png 600w" sizes="(max-width: 624px) 100vw, 624px" /></figure>
+
+
+
+<p><strong>Now before everyone heads off to Aquilla’s Halo, please read on.</strong></p>
+
+
+
+<p></p>
+
+
+
+<p>Traveled areas have less potential.&nbsp; The track between the Bubble, Colonia and Sagittarius A* are pretty beaten paths with a low number of discoveries potential.&nbsp; Still plenty of things to discover, but your chances are going to be higher elsewhere.&nbsp; The outer edges of the galaxy have more potential, including mineral based biologies because they simply haven&#8217;t been traveled as much as other regions.&nbsp;</p>
+
+
+
+<p>Careful though, outer regions potentially have different star class distributions.&nbsp; For example, Aquilia&#8217;s Halo may just not have any white dwarfs, which will make finding those biologies a little challenging.&nbsp; A great site for exploring those star distributions is <a href="https://edastro.com/">https://edastro.com/</a></p>
+
+
+
+<p><strong>Where would I go?</strong></p>
+
+
+
+<p><strong>I</strong>f I was in the bubble, I would head for Lyra&#8217;s Song, by way of Outer Orion Spur and Achilles&#8217;s Alter.  Wanting to get there quicker? I&#8217;d use <a href="https://www.spansh.co.uk/plotter">https://www.spansh.co.uk/plotter</a> and use the neutron highway to get myself out into the undiscovered area a little quicker. Don&#8217;t forget to head up or down off the galactic plane to get out of that more commonly traveled space.</p>
+
+
+
+<h2>What to hunt for?</h2>
+
+
+
+<p>Mineral biologies are going to be random, so hunting for star types is the way to go.&nbsp; If the goal is just a codex entry, depending on the region, you can potentially skip certain star types.&nbsp; For example, if you are in the Galactic Center, Star Types M, G, F, and K have had all their types discovered, you looked at the chart right?.&nbsp; That isn&#8217;t to say that you might find a secondary Y star in one of those systems with Y type biologies, but I thought you wanted a codex entry?.</p>
+
+
+
+<p><strong>What would I hunt?</strong></p>
+
+
+
+<p>I would meander my way through those regions looking through the galaxy map for the unique/rarer types, like W,O,B,N,Ae and D.&nbsp; Then filter out any that I wanted to avoid, perhaps K class, and then set a slow route from one unique to the next unique, scanning as I go along.</p>
+
+
+
+<p>Drop in, honk the discovery scanner.&nbsp; Scan the planets in FSS, see if the tools (see below) indicate anything, then perhaps planet scan or move on to the next.&nbsp;</p>
+
+
+
+<h2>Tools for hunting?</h2>
+
+
+
+<p>Most important tool for Codex Hunting is going to be Observatory with the BIO Insights plugin. <a href="https://edjp.colacube.net/">https://edjp.colacube.net/</a> This single tool will cut down your search time by 50% if not significantly more. They have done an amazing job with this tool.&nbsp; As you FSS the system and each planet, it will indicate if there is a potential codex entry to be found, no orange diamond means continue on.&nbsp; Ok, I guess some planets are worth some money, and some stratum can earn you a near 100 million creds for first scans, but all that pales in comparison to a Codex Entry doesn’t it.&nbsp; Don&#8217;t have a second screen, it will popup overlays and audio messages if you turn them on.&nbsp;</p>
+
+
+
+<p><strong>Help make the tools better</strong></p>
+
+
+
+<p>The biology requirements are all figured and based on the logs gathered by other commanders running tools to collect data and refine that information into precise requirements.&nbsp; You can help with that by running tools like&nbsp;</p>
+
+
+
+<ul><li>EDMC &#8211; Elite Dangerous Market Connecter <a href="https://github.com/EDCD/EDMarketConnector">https://github.com/EDCD/EDMarketConnector</a></li><li>With the Canonn plugin <a href="https://github.com/canonn-science/EDMC-Canonn">https://github.com/canonn-science/EDMC-Canonn</a></li></ul>
+
+
+
+<p></p>
+
+
+
+<p>This combination of tools records information about the things you can, as well as provides you details about the system you are currently in.&nbsp; One helpful feature of the Canonn plugin is that targeting a system will tell you if it has potentially been already explored by someone else, allowing you to know if there is anything left to scan or if you should perhaps skip this one.&nbsp;&nbsp;</p>
+
+
+
+<p>Don&#8217;t worry, no one can steal your codex entry, as soon as you scan that item for the first time in a region, it instantly gets recorded.&nbsp; First foot falls work the same way, but if you want to get that first discovered tag on the planet, then I would recommend a quick spin to one of the DSSA carriers and sell your exploration data.&nbsp; First discovery tags on a planet or star only get recorded when you sell your exploration data. You can find DSSA carrier locations on the EDAstro site here <a href="https://edastro.com/galmap/">https://edastro.com/galmap/</a> using the layers and turning on DSSA Carriers, pretty sure there is one near you.</p>
+
+
+
+<h2>How not to go insane looking for an Odyssey Bio Codex Entry?</h2>
+
+
+
+<p>&lt;<em>No Data Available</em>&gt;</p>
+
+
+
+<h2>Looking for a truly galactic first?</h2>
+
+
+
+<p><em>Please always check the in game codex before doing a deep dive on a particular item, as the hand transcribed codex entries can occasionally be wrong.&nbsp; If you find any discrepancies, please contact CMDR Maxanthius on the Canonn Discord server to inform me of my failures.</em></p>
+
+
+
+<p>In the transcribed codex, there is a tab called Missing Colours</p>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://canonn.science/wp-content/uploads/2023/05/image-3-1024x522.png" alt="" class="wp-image-9213" srcset="https://canonn.science/wp-content/uploads/2023/05/image-3-1024x522.png 1024w, https://canonn.science/wp-content/uploads/2023/05/image-3-300x153.png 300w, https://canonn.science/wp-content/uploads/2023/05/image-3-600x306.png 600w, https://canonn.science/wp-content/uploads/2023/05/image-3-768x391.png 768w, https://canonn.science/wp-content/uploads/2023/05/image-3.png 1332w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><a href="https://docs.google.com/spreadsheets/d/1uOYgECrwpIeYsapUxfOuULCeLAwIv_3ZqtNIvNDHsFA/edit?usp=sharing">Missing Colours Tab</a></figcaption></figure>
+
+
+
+<p>Based on the entryIDs from the log files there are gaps on the discovered items which are believed to be undiscovered BIOs.&nbsp; As of 3309-05-22, Cactoida Vermis Ocher is believed to exist around a Y class star because Ocher has been found for other Cactoida variants around Y class stars.&nbsp; These are only theories though, as there is also a gap for Cactoida around K class stars, but none have been discovered and given how common K stars are scanned you would think at least one would have shown up by now.</p>
+
+
+
+<p>So continuing that first example and hunting for Cactoid Vermis Ocher, using the <a href="https://canonn-science.github.io/bioforge/?entryid=Cactoida%20Vermis">Canonn Bioforge</a> you can make assumptions that all vermis are found on Thin Water atmosphere planets, and you are looking for a Y class star.  It also isn’t on the list of restricted region Bios, so it should be able to be found anywhere in the galaxy.</p>
+
+
+
+<p>One could presumably use a tool like  <a href="https://www.spansh.co.uk/bodies">spansh bodies search</a> to find Thin Water atmosphere planets and cross reference them with systems that have a Y class star.  Perhaps even include some temperature parameters. Even though these systems had to have been visited by other commanders in order to show up in the Spansh site results, it could have been before thin atmospheric planets were landable, or perhaps someone just blasted through and didn’t stop to scan them.  It at least provides a target list to visit instead of stumbling around out in the black hoping to come across a thin water atmosphere planet with a Y class star in the system. To each his own.</p>
+
+
+
+<h2>Summary</h2>
+
+
+
+<p>Use the Neutron highway, to get to a more unexplored region and look for rarer star types, while using the Bio Insights plugin in observatory to burn from system to system until you see that orange diamond, keeping your fingers crossed that when you scan that bio, the system says “New Codex Entry”.</p>
+
+
+
+<p>Best of luck out there CMDRs.</p>
+
+
+
+<p>Marxanthius.</p>
+
+
+
+<p><em>Ideas for future study:</em></p>
+
+
+
+<ul><li><em>How to improve finding Y, T, and L as secondary stars or as planets? Mass Codes? Sacrifice beer filled escape pods to the far god for increased luck chances? Locations? Primary Star types?&nbsp;</em></li></ul>
+
+
+
+<p></p>The post <a href="https://canonn.science/codex/get-your-name-in-the-codex/">Get Your Name In The Codex</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Azimuth Saga Overview</title>
+		<link>https://canonn.science/codex/azimuth-saga-overview/</link>
+		
+		<dc:creator><![CDATA[NoFoolLikeOne]]></dc:creator>
+		<pubDate>Wed, 21 Sep 2022 19:50:05 +0000</pubDate>
+				<category><![CDATA[Archaeology & History]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Aegis]]></category>
+		<category><![CDATA[Azimuth]]></category>
+		<category><![CDATA[Guardians]]></category>
+		<category><![CDATA[INRA]]></category>
+		<category><![CDATA[Salvation]]></category>
+		<category><![CDATA[Thargoids]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=8880</guid>
+
+					<description><![CDATA[<p>CMDR Coehoorn has supplied a overview of the Azimuth Saga taken from Galnet Chapter 1 Beginning a multi-part overview of historical events surrounding Azimuth Biochemicals and its connection to the mysterious Salvation. On the 29th of October 3306, an abandoned megaship named the Adamastor arrived in the Chukchan system, after travelling at sublight speeds for...</p>
+The post <a href="https://canonn.science/codex/azimuth-saga-overview/">Azimuth Saga Overview</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>CMDR Coehoorn has supplied a overview of the Azimuth Saga taken from Galnet</p>
+
+
+
+<h2><strong>Chapter 1 <br></strong><em>Beginning a multi-part overview of historical events surrounding Azimuth Biochemicals and its connection to the mysterious Salvation. </em></h2>
+
+
+
+<p><em><br></em>On the 29th of October 3306, an abandoned megaship named the <a href="https://canonn.science/codex/ghost-ship-adamastor/">Adamastor</a> arrived in the <a href="https://www.edsm.net/en/system/id/5961/name/Chukchan">Chukchan</a> system, after travelling at sublight speeds for nearly 200 years. At the time, no one could have foreseen the wide-ranging consequences that would arise from unlocking the secrets of this ghost ship. Investigations revealed that it had been owned by a little-known and long-defunct corporation called <a href="https://canonn.science/tag/azimuth/">Azimuth Biochemicals</a>. The derelict’s journey was traced to the previously unexplored Coalsack Nebula, where the Adamastor had collected the survivors of a planetary survey team from the <a href="https://www.edsm.net/en/system/id/1470869/name/Musca+Dark+Region+PJ-P+b6-1">Musca Dark Region PJ-P b6-1</a> system.</p>
+
+
+
+<p><br>Back in 3111, these geologists had encountered something terrifying and completely unknown: the first recorded instance of contact with the Thargoids. According to team leader Professor Carver, whose <a href="https://canonn.science/codex/professor-carver-crashed-sidewinder/">final log</a> was discovered on <a href="https://www.edsm.net/en/system/id/3538986/name/HIP+69200">HIP 69200 1 B</a>, a recovered alien artefact caused equipment malfunctions and delusions among the crew. The damaged Adamastor was abandoned, to finally return home on autopilot two centuries later. Further exploration of the Coalsack Nebula uncovered nothing more, but did lead to the detection of new barnacle sites. The Alliance wasted no time in harvesting these for meta alloys, followed by a Sirius Corporation <a href="https://community.elitedangerous.com/galnet/uid/5fd20dbbb6bd4f1bad5c0af2" target="_blank" rel="noreferrer noopener">project to terraform ammonia worlds</a> reported 10 DEC 3306.</p>
+
+
+
+<p><br>A resurgence of attacks from Thargoid vessels followed, suggesting that the alien species was as territorial as ever. In April 3307, the Adamastor began receiving a long-range encrypted signal. A decryption key for this was provided by an anonymous source who identified himself only as ‘Salvation’. Tracking the signal led to the wreck of the <a href="https://canonn.science/codex/hesperus/">Hesperus</a>, the Adamastor’s sister ship. This had disappeared in 3113 and was now drifting in the <a href="https://www.edsm.net/en/system/id/4561578/name/Perseus+Dark+Region+KC-V+c2-2">Perseus Dark Region KC-V c2-2</a> system.</p>
+
+
+
+<p><br>The distress call had been triggered by a dredger occupied by the nomadic Scriveners Clan, who had salvaged the Hesperus’s data drives. Messages leaked from the dredger revealed how the Hesperus had been taken over by sleeper agents from Pharmasapien, the corporate rivals of Azimuth Biochemicals. This resulted in the deaths of all except a scientific team, who had escaped aboard a secondary craft. Two months later, the enigmatic <a href="https://canonn.science/tag/salvation/">Salvation</a> asked pilots to track down the Hesperus’s signal beacons to find those missing Azimuth crew members. The secondary craft, named <a href="https://canonn.science/codex/proteus/">Proteus</a>, was subsequently discovered on a moon in the <a href="https://www.edsm.net/en/system/id/1475056/name/Trapezium+Sector+YU-X+c1-2">Trapezium Sector YU-X c1-2</a> system. Its crew had transformed it into a research facility, to study relics from a nearby ancient battleground between the Guardian and Thargoid races. The security officer’s log told of Azimuth’s real purpose: locate non-human technology and weaponise it for the military market. The scientists had conducted dangerous experiments on Guardian crystals, accidentally triggering a radiation surge which wiped them all out. It seemed that Azimuth’s story ended there, nearly 200 years ago. But the fate of the Proteus would have enormous repercussions for the future of the galaxy.&nbsp;</p>
+
+
+
+<h2><strong>Chapter 2 <br></strong><em>A summary of key events around the rise and fall of the tri-superpower organisation Aegis.</em></h2>
+
+
+
+<p><em><br></em>The Alliance, Empire and Federation created <a href="https://canonn.science/tag/aegis/">Aegis</a> in 3303 to lead xenological research and coordinate defensive actions against the Thargoids. With fears that the alien species might one day overwhelm human-controlled space, Aegis’s role was to spearhead the resistance against a common enemy. There were concerns that Aegis might adopt the same unethical practices as its notorious predecessor <a href="https://canonn.science/tag/inra/">INRA</a>, which had been formed back in 3125 during the First Thargoid War. But the new agency was welcomed by most, providing intelligence on Thargoid activity as well as advanced weapons. Since capital ships were vulnerable to the Thargoid shutdown field, Aegis soon had no choice but to rely heavily on independent pilots to perform ship-to-ship combat. And despite its effectiveness at coordinating defence, it was criticised for having no strategy to actually defeat the alien threat.</p>
+
+
+
+<p><br>By 3306, Aegis already showed signs of decline. Its Eagle Eye detection network had ceased to provide warnings about Thargoid attacks, and there were no new developments in anti-xeno weaponry. The rise of the <a href="https://canonn.science/tag/nmla/">NMLA</a> had altered the political landscape, with funding for Aegis being redirected toward countering the terrorists and preparing for possible Federal-Imperial war. In March 3307, the <a href="https://community.elitedangerous.com/galnet/uid/6012ad824aaf2914d56a6da3" target="_blank" rel="noreferrer noopener">Galactic Summit</a> failed to ratify the <a href="https://community.elitedangerous.com/galnet/uid/6047718ff6016450154ae258">Sirius Treaty</a>, which would have united superpowers, corporations and independent systems against the Thargoids. Instead, Aegis was directed to undertake new research into the Guardians. Their extinct civilisation was thought to hold the key to outmatching the Thargoids’ biomechanical technology.</p>
+
+
+
+<p><br>A successful initiative in May 3307 resulted in enormous quantities of Guardian artefacts being delivered to the Aegis megaship <a href="https://canonn.science/codex/the-alexandria/">Alexandria</a>. Thargoid vessels were drawn to this concentration of technology created by their ancient enemy, and pursued the Alexandria from system to system. When the megaship did not emerge from a hyperspace jump, it was assumed to have been intercepted and destroyed. An independent board of inquiry was established to investigate the loss of the Alexandria. So thorough was this investigation that most of Aegis’s activities were suspended, and many leading figures forced to resign. Public confidence in the agency was low, with a general sense that it was no longer fit for purpose. In November 3307, Aegis was brought further into disrepute when its chief military liaison went rogue. Admiral Aden Tanner led an <a href="https://community.elitedangerous.com/galnet/uid/618d13fa79f0245b464f12dd">unauthorised assault</a> against Hind Mine in the <a href="https://www.edsm.net/en/system/id/31528/name/T+Tauri">T Tauri</a> system, the headquarters of Salvation’s corporate ally Taurus Mining Ventures. Tanner was convinced that Salvation’s activities deliberately provoked the Thargoids and that the starport contained evidence of this. His actions would result in failure and court martial, accelerating Aegis’s fall from grace. </p>
+
+
+
+<p>The <a href="https://community.elitedangerous.com/galnet/uid/61dbf911a71403670b054d12">Baumann Report</a>, which published the inquiry’s findings in January 3308, exposed endemic weaknesses including negligence, poor management, and the treatment of pilots as disposable mercenaries. The casualties resulting from the Alexandria disaster and the Hind Mine attack were the final nails in the agency’s coffin. The Alliance, Empire and Federation announced that Aegis would be replaced by devolved anti-xeno taskforces. Its support megaships, still active during Thargoid incursions, were crewed by volunteers until the combat logistics corporation Frontline Solutions agreed to operate them. Even after the true fate of the Alexandria was discovered, along with data supporting Admiral Tanner’s suspicions, the collapse of Aegis was by now irreversible. For in recent months, Salvation had achieved impressive results on a scale that no military power could hope to match.&nbsp;</p>
+
+
+
+<h2><strong>Chapter 3 <br></strong><em>An overview of how Aegis was impacted by the rise of Salvation as a competing anti-xeno force. </em></h2>
+
+
+
+<p><br>For now I cannot provide you with my credentials. Suffice to say that I am a man of science, unconnected with modern politics. I am recruiting agents to investigate the work undertaken by Azimuth Biochemicals two hundred years ago, which I believe to be of enormous scientific importance. Much has been lost in that time, but our dedication will allow us to rewrite history.” This was how the anonymous figure known only as Salvation introduced himself to Pilots’ Federation members in April 3307. Faceless and voiceless, he remains unseen to the present day. His messages characterised him as a dedicated scientist, one with enormous confidence in achieving his goal to destroy the Thargoids and “save all of humanity”. It was clear that Salvation possessed detailed knowledge about Azimuth Biochemicals, without which the Hesperus would not have been discovered. He began recruiting independent pilots to undertake missions via the intermediary of Taurus Mining Ventures, a corporation based in the remote T Tauri system. After locating the Proteus in June 3307, Salvation claimed exclusive rights to exploit the ancient Guardian-Thargoid battleground on Trapezium Sector YU-X c1-2 1a. This was contested by Aegis, but their initiative to gather Guardian artefacts from the site was eclipsed by Taurus Mining Ventures’s campaign. In a short time, Salvation successfully emerged as a rival to Aegis, claiming that the tri-superpower agency could not be trusted. This was reinforced after the tragic loss of the Alexandria megaship. Due to its cargo of Guardian artefacts, Thargoids had relentlessly pursued the megaship before it vanished in hyperspace. An independent inquiry into the disaster ordered Aegis’s operations to be suspended, leaving an absence that Salvation was keen to exploit.</p>
+
+
+
+<p><br>In September 3307, Salvation warned of an impending Thargoid attack in the <a href="https://www.edsm.net/en/system/id/11768/name/Cornsar">Cornsar </a>system, apparently detected by his version of Eagle Eye. Aegis and local factions dismissed this as highly unlikely, but nevertheless Thargoid vessels did swarm into the system. Salvation again reached out to pilots and asked them to transport vital equipment from a Taurus Mining Ventures megaship to Cornsar, for a prototype weapon that he was constructing. A counter-initiative took place by Commanders who distrusted Salvation or supported Aegis, illustrating that each now had their supporters among the galactic community. Four days later, the Thargoid invasion force unexpectedly vanished from Cornsar. Most withdrew into hyperspace, but crashed alien vessels remained on some planetary bodies. Salvation revealed he had developed an anti-xeno superweapon, capable of eliminating the Thargoid presence from an entire star system. “I have achieved what Aegis could not – an effective deterrent against the alien threat.” The nature of this incredible new weapon remained unclear, but evidence of Guardian technology later found in Cornsar raised a disturbing possibility: Did Salvation really detect the approaching Thargoid fleet &#8211; or did he deliberately attract the Thargoids to Cornsar by stockpiling huge quantities of Guardian artefacts – as happened on the Alexandria – in order to test his prototype superweapon? As a Vox Galactica report put it “Time will tell if Salvation’s ambition to replace Aegis is a noble goal, or if we are replacing the devil we know with a darker demon.”&nbsp;</p>
+
+
+
+<h2><strong>Chapter 4 <br></strong><em>A look at the rivalry between Aegis and Salvation during the escalating war against the Thargoids. </em></h2>
+
+
+
+<p><em><br></em>Salvation’s success in purging the Thargoid presence from the Cornsar system had many repercussions, not least from the aliens themselves. Several inhabited nebulas were suddenly overrun with Thargoid vessels, leading some to believe they were reacting aggressively to the Guardian-based nature of the anti-xeno superweapon. Aegis’s hands were tied by the ongoing public inquiry, but its chief military liaison Admiral Aden Tanner was convinced that the superweapon was designed to attract Thargoids as well as repel them. Claiming that evidence for this could be found at Hind Mine in the T Tauri system, he commanded the megaship Musashi to launch an assault. This was a battle that Taurus Mining Ventures won with much support from independent pilots, showing how much faith was now placed in Salvation. Tanner was court martialled and the captured Musashi became the flagship of Salvation’s growing forces. Commodore Morag Halloran, formerly of the Alliance Defence Force, took command and became his military coordinator.</p>
+
+
+
+<p><br>By December 3307, the Alliance, Empire and Federation had officially acknowledged that Salvation possessed the technology required to defeat the Thargoids. This assumption was then put to the test when the Delphi, Maia and Merope systems suffered simultaneous full-scale invasions. Once again the Thargoids were routed following the detonation of three newly constructed superweapons, repeating Salvation’s success at Cornsar. His triumphant proclamations now verged on the messianic “I urge the peoples of the galaxy to unite behind my crusade. Aegis is finished. I am the only remaining defence for humanity. I am Salvation.” By this point, public opinion toward Salvation was generally positive. Volunteers flocked to Taurus Mining Ventures to offer support, with naval crews from the superpowers defecting to take part in battling the Thargoids. Secondment to Salvation’s forces soon became officially authorised, showing an increasing acceptance of the anonymous scientists methods and results.</p>
+
+
+
+<p><br>January 3308 saw a number of developments. Admiral Tanner’s court martial was interrupted by a statement from the renowned scientist Ram Tah, confirming the non-human origins of Salvation’s superweapon. Ram Tah theorised that it was based on a Guardian device found by Azimuth Biochemicals scientists at the Proteus site, which generated an electromagnetic pulse to disrupt the Thargoids’ biomechanical vessels. But this justification of Tanner’s concerns was not enough to prevent the inevitable fall of Aegis. The Baumann Report delivered a damning indictment of the agency’s operations, concluding that it should be shut down. The three superpowers began using their own militaries to replace Aegis with separate anti-xeno taskforces. A more surprising event that month was the discovery of debris from the missing megaship Alexandria, scattered across the planetary rings of <a href="https://www.edsm.net/en/system/id/237189/name/Wregoe+TC-X+b29-0">Wregoe TC-X b29-0</a> AB 2 A. Captain Morales’ report revealed that the ship had emerged from hyperspace off course due to sabotage, before being raided by a quasi-military force which hijacked its cargo of Guardian artefacts. The surviving crew’s attempt to restart the damaged hyperdrive was the cause of the Alexandria’s destruction. Morales also mentioned that the raiders were obeying orders from someone named ‘<a href="https://canonn.science/tag/the-witch/">the Witch</a>’. This detail was seized upon by Aegis’s remaining leaders, who matched it to abandoned research facilities found in August 3307 within the HIP 22460 and HIP 26176 systems. These were the sites of the mysterious <a href="https://canonn.science/tag/project-seraph/">Project Seraph</a>, an attempt to install human pilots into a captured Thargoid scout. Both the Witch and Azimuth were referenced in its surviving logs. Aegis’s warning was clear Azimuth Biochemicals, which was supposedly liquidated two centuries ago, had survived to the present day.&nbsp;</p>
+
+
+
+<h2><strong>Chapter 5 <br></strong><em>The concluding article in this series examines events leading to the resurrection of Azimuth and Salvation’s plans for the future. </em></h2>
+
+
+
+<p><em><br></em>During February and March 3308, Aegis suffered a slow death as its operations were shut down by the superpowers. Its leaders continued calling for its reinstatement, not just to battle the Thargoids but also to oppose Azimuth Biochemicals. They claimed that this sinister corporation was still performing unlicensed xenological research and was responsible for thousands of deaths. Meanwhile, the number of Thargoid incursions was increasing, perhaps in response to Salvation’s Guardian-based superweapon. This culminated in a simultaneous invasion of the Didio, Novas and Sosong systems in April 3308. These were major population centres for the Alliance, Empire and Federation respectively, with over ten billion lives at risk. Salvation and the superpower militaries responded in concert. Allied, Imperial and Federal capital ships were deployed to coordinate system defences, and also host the construction of three new superweapons. Interviews with the admirals in charge of the anti-xeno taskforces provided an insight into how much they now relied on Salvation. The superweapons were successfully detonated in all three systems, but this time there were no wreckages left behind. It was unclear if these particular weapons were less effective, or if the Thargoids had anticipated their use and retreated before their vessels could be disrupted. This was nevertheless hailed as another victory for Salvation. He announced that he was working on the next generation of the devices, which would “deliver a truly overwhelming strike against the Thargoid species”. Increased amounts of personnel, supplies and equipment were provided to Taurus Mining Ventures to hasten development of the superweapon.</p>
+
+
+
+<p><br>In May 3308 came a shocking revelation. Professor Alba Tesreau, former head of research at Aegis, received a tip-off leading to an <a href="https://canonn.science/codex/iraxon-lane/">abandoned outpost</a> in the <a href="https://www.edsm.net/en/system/id/24467/name/DG+Canum+Venaticorum">DG Canum Venaticorum </a>system. This turned out to be a previously undiscovered base for INRA, the Intergalactic Naval Reserve Arm, which was formed to combat the Thargoids during the 32nd and 33rd centuries. The base provided evidence that INRA had contracted Azimuth Biochemicals to aiddevelopment of the mycoid virus. This was a highly controversial bioweapon used in 3151 to infect the aliens’ mothership, and which helped bring about the end of the First Thargoid War. Logs recorded by Dr Caleb Wycherley, the corporation’s vice-president of research, explained how he gained the nickname ‘the Witch’ after being half-blinded by a live Thargoid specimen. He then vowed that under his guidance, Azimuth would devote itself to the destruction of the Thargoids “If I must be humanity’s salvation, then so be it.” The former leaders of Aegis claimed that this verified their theory Salvation and ‘the Witch’ were the same person, and Azimuth had been operating in the shadows for decades. Professor Tesreau later revealed that the tip-off came from Subject D-2, the only survivor of the Project Seraph experiments to create a human test pilot for Thargoid ships. Some believed Aegis had fabricated these logs, since Dr Wycherley would now be over 200 years old. But although Salvation did not overtly confirm his true identity, Aegis’s suspicions were validated when Taurus Mining Ventures rebranded itself as Azimuth Biotech. Salvation described how Azimuth’s research division had survived as an independent organisation under his control, focused exclusively on Thargoid research and preparing for inter-species conflict. There was a public outcry that the man claiming to be humanity’s saviour was also responsible for the mycoid bioweapon, Project Seraph, the attack on the Alexandria, and other illegal or unethical activities. And yet there was little reaction from the Alliance, Empire or Federation, whose militaries were now fully committed to working with Salvation to defeat the Thargoids.</p>
+
+
+
+<p><br>In the past week, there have been signs that Azimuth Biotech is mobilising its forces and preparing for a large-scale operation of some kind. This may well tie in with Salvation’s promise to unveil a more powerful type of anti-xeno superweapon. We may soon learn if Azimuth can repeat history and deliver the decisive blow to end to the Second Thargoid War.</p>The post <a href="https://canonn.science/codex/azimuth-saga-overview/">Azimuth Saga Overview</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Canonn Tour</title>
+		<link>https://canonn.science/codex/canonn-tour/</link>
+		
+		<dc:creator><![CDATA[NoFoolLikeOne]]></dc:creator>
+		<pubDate>Wed, 01 Jun 2022 21:18:49 +0000</pubDate>
+				<category><![CDATA[Archaeology & History]]></category>
+		<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Xeno-Technology]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=8650</guid>
+
+					<description><![CDATA[<p>Cmdr Content created a expedition to represent Canonn in an HCS Voicepacks competition This route provides 17 destinations rich with the lore of the Galaxy. Most of these destinations focus on our xeno friends, the Thargoids, and our efforts to hide and eradicate them. Varati: Varati has been the start of many expeditions, both local...</p>
+The post <a href="https://canonn.science/codex/canonn-tour/">Canonn Tour</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>Cmdr Content created a expedition to represent Canonn in an HCS Voicepacks competition</p>
+
+
+
+<p>This route provides 17 destinations rich with the lore of the Galaxy. Most of these destinations focus on our xeno friends, the Thargoids, and our efforts to hide and eradicate them.</p>
+
+
+
+<p><strong>Varati</strong>: Varati has been the start of many expeditions, both local and out into the void. The birthplace of Canonn- there is no better place where this tour should start.</p>
+
+
+
+<p><strong>Mycoid/INRA Story</strong>: Here we follow the story of the Mycoid Project, led by the Intergalactic Naval Reserve Arm (INRA), a co-operative between the Federation and Empire that operated during the last war with the Thargoids.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh6.googleusercontent.com/lWojlJAh9Cdbumwyx2GJhQqO-yhzw8vrc-NQP7Vor8w8HrujFdZn1fOoGix-3nUczTFJKLF3KIcd7ZD3U4t-XqI4vAIjI-MD2d8sCrgbKjwtzztC0f1hPcDsIkOAeh1MlfTVDT1K4FbQA9Omzg" alt=""/></figure>
+
+
+
+<p><strong>Hermitage</strong>: Located on planet Hermitage 4 a, you can find the remains of a derelict agricultural facility once known as Hollis Gateway. Here at Hollis Gateway you can follow the beginnings of the Mycoid bioweapon by scanning the 4 data logs found about the facility.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/HnmUaLE6iMRS5V8WT828-fgoDMs24WHntsYTrcUlKJvusf3DC71ZPAi4-KyZ299q356eVu9winqDHTwWpKH8m9A9ehYeETDOegV8fUmcMk5Dk6K56yc34aWSEoj-uVSq78pvwcais33A1LaaBg" alt=""/></figure>
+
+
+
+<p><strong>Alnath</strong>: Located on planet Alnath A 2 a a, you can find the remnants of another derelict facility known as Klatt Enterprises, here you can find additional logs about the Mycoid bioweapon’s production and the start of weaponizing the Mycoid.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/xBY3oy4jUVsWG5mNDPeXgGvUTSk9N0gZ3pi09rojt8pVz8b8NObukXpP_-zuUN6GSkyKc7PYpAWOw7T_yHR4gNqee8U0bg3BkLhhiDXMStRX2GkTieSrgSBRIgrsfFmNVr7vITGpjYnx8AW_Og" alt=""/></figure>
+
+
+
+<p><strong>HIP 12099</strong>: Located on planet HIP 12099 1 a, you can find a third derelict facility known simply as Stack. The facility’s major feature is the experimentation pit which seems to contain both Mycoid residue and parts of Thargoids that have been experimented upon. Logs can be found detailing the unethical and cruel experiments conducted there. We will be revisiting HIP 12099 later in this tour.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/PwGVzQB-ghK7v6ozQwdG0nGw-Pk52hss1TJm94nT5hpMeuuwTbYad9SaphwKFIyMZEFqAS7AqrSQDESkb9pLNunacIlXOVoN-oF65hpU08gyjNb7lE3OYWCuShwbF3jIT3r1m4HrIbdZNgoYdg" alt=""/></figure>
+
+
+
+<p><strong>12 Trianguli</strong>: Located on planet 12 Trianguli A 1, there is a fourth derelict facility known as Taylor Keep. This facility operated as a launch point for the delivery of weaponised Mycoid to a Thargoid hive ship by the infamous CMDR John Jameson. The facility contains a number of habitation modules, a hanger and barracks buildings, as well as being surrounded by defence turrets. A second major feature is the ship landing pad and control tower. Logs can be found containing the moments before the operation was launched.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/oVDsZ95GuJD87hMqPtZRw63paQqQSOpVfVgLyStc1gdkAV-UT2mBkA5Z5sIPU8ZalH-4NUvk0w5pbwTwu1BN0z9x7AhXIfAPZBnhBnLHIQgx8MAvPpalBXxrQcLQQnjipsi8JRaby9B7VWaF4Q" alt=""/></figure>
+
+
+
+<p><strong>LP 389-95</strong>: Located on planet LP 389-95 7, our final derelict facility can be found. Here the Velasquez Medical Research Centre can be seen. The facility was used mysteriously to create the vaccine for the Mycoid bio weapon, unknowingly to the scientists working there. It is hinted that this vaccine is the reason the Mycoid bioweapon has been rendered ineffective to the Thargoids in the Second Thargoid War, and why it is no longer in use.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/yQTk9pJpbFBOtrp5N7jpoTcifa-G_t72QwnkG06JRQJMrvRyeoE-1k9KZVijQvSuvJohjR4fqv11Eq0AG-Mx06DEDPlrcwJGqULG6vsR9cgqPCD33zIqe_g316ysMbtcjpCY_cNAf5aCte49JQ" alt=""/></figure>
+
+
+
+<p><strong>HIP 12099: </strong>Revisiting the HIP 12099 system we can finally wrap up the INRA story and Project Mycoid. A lone ship can be found crashed on planet HIP 12099 1B. Upon arrival, logs can be found from a crashed Cobra MkIII, after scanning the ship the ID tags belong to none other but CMDR John Jameson. These logs detail his final mission and his sorrowing final messages.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/sGRX8XzZSra768D3fv0dG_IEe40g6ZJvjgBT5Zn8RR6TGgd1wbn8sIG9gdJ0gLpzDkZokV6tDO6gnVcerIPswie1smQwiV9BGs4Ykfab-o_UAxVWS734s3f_53KY4EDaH_GMu5nQTdJ9EANBSg" alt=""/></figure>
+
+
+
+<p><strong>Discovering the Unknown Structures</strong>: Here we find lore of the Thargoids and the mysterious operation to hide them from the public, along with the first discoveries of the “Unknown” Structures.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/cuz5ZxMRFlLXZK6C7YyD77U_CeKZCI4ZsBBgR6hLO9lj7etmg_-CYTvp8sZqnTyIv9WYNarREO3Zr7cqiMVvx-2Mb-c5X3I9zqCKHKCVtYiJt3kATXqHtZiqBuFbowGiYr7m1OUZfhfYduWr7Q" alt=""/></figure>
+
+
+
+<p><strong>Electra</strong>: Orbiting planet Electra 4 an installation can be found named Communication Hub Zeta 12. Upon arrival you can scan the logs found about the installation and discover shady things going on within. After scanning the unregistered comms beacon adjacent to the facility, a encrypted code can be found hinting to our next location.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/JTVY9JFCT77c72Nqu1B7o9kY_nIG4dVFzH597gD-UQsxva1TpS5z9UIY4MJyMjQLIR_bV4Fw7rCFbi2TUakywikXV6XhIEsdAy4Pn7gTran4qXVMaUxGtovRnkgJsmG6bcFBuil1Qhd1bFwapg" alt=""/></figure>
+
+
+
+<p><strong>HIP 19026</strong>: After decrypting the original message given by the unregistered comms beacon from Communication Hub Zeta 12, the following message is given:</p>
+
+
+
+<p>OPERATION OVERLOOK SITREP</p>
+
+
+
+<p>GIP 19026 SITE B 1 C</p>
+
+
+
+<p>LAT LONG</p>
+
+
+
+<p>M PARTICLES MINIMAL</p>
+
+
+
+<p>MODE STAND BY</p>
+
+
+
+<p>By going to the HIP 19026 system on planet HIP 19026 B 1 c, the first ever Thargoid Surface Instillation, or “Unknown” Structure, can be found. A breathtaking view and discovery, this facility was sadly found inactive and in disarray.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/RcUqy6CijKUtRGmUiFe66Dreb41XnXeZWTkhH4hDE-M-rKqUTOL58xxDaHA1qOwvZvSSu2i-6Mo7hDfEMi8OtE3jIDetEGJEBY0NQ84NHuY4xi_8Asld3NKlbNJ7wt775qlydz6zhJ1k9mownQ" alt=""/></figure>
+
+
+
+<p><strong>HIP 26176</strong>: Found on planet HIP 26176 A 5 i, a derelict facility can be found by the name of Oaken Point. Here we find the logs of a so called “Project Seraph” where an unknown scientific group is trying to interface with Thargoid craft. We can also find in these logs a so called Black Flight, hinted to be a sort of military or spec ops for this group.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/mfN9LNkU5hWEVPtnswzpl1auxyePjRm6AY9gsXVMNC2kQ8rb5aaq0L5cNOHC2jyq-p-U5ri1-vdoSAKqLgtf9_RROi00fTX1v3q4OMiGKqb8MWwGlfTCY4pU-VkxSbRqdBxCvHO03v4dV565yQ" alt=""/></figure>
+
+
+
+<p><strong>Celaeno</strong>: An installation in orbit of Celaeno 1 named Relay Station PS-J-17 reveals additional logs that detail operations of this so called “Black Flight” including that of Communication Hub Zeta 12 and other mysterious operations that all linked to masking the local Thargoid presence from the public.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh6.googleusercontent.com/JbJDEKwVzO0b6sVmTTU-QZGtmx_md2y3FWLf6opUXxrxHXoLTa4tKpwti8S6Y54AqVjj4rfmnFJxMrGlAKx9PbZvBAM132FLQUdeiVhR0YD10xYq4SFaey9UiDIdNUt_65Drx2x-H_OAmfhawA" alt=""/></figure>
+
+
+
+<p><strong>Synuefe GB-O c9-8</strong>: Here a beacon can be found containing the permit that must be obtained to enter the next system.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/vQhZSuBs2w7Q5u2QK-U3csGZzFULQOwNDx4_TZU5ArRzeU8fTEfRrfLxUXpB04EmCml5fY7BCEGcOFYspDzX0XE9oa9_j5qE1cJs7Y19j1kjwQQMmf4aBAoMuRl6uNK2LhVaMZVN2p61QmoITg" alt=""/></figure>
+
+
+
+<p><strong>HIP 22460</strong>: Two Project Seraph facilities can be found here, Overlook, a Megaship and presumably the headquarters of the mysterious Black Flight. And located on planet HIP 22460 7 c, a Project Seraph base known as Fort Asch can be found. Logs found both on the Overlook and Fort Asch wrap up this mysterious story about the Black Flight and Project Seraph. Additionally on planet HIP 22460 10 B you can find both an active and inactive Thargoid Structure. I highly recommend experimenting with the active site a bit, who knows what can be found.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh6.googleusercontent.com/m9KRLo3FHV12UKiUyX-r0sVaRWNOACJl0TM3UaF4syil2FqqAgp9ZaU6kMBuRpqkR-pjeipKpixGCwhKlRs4nYriolwJd0d-ia92VBEJxBn_hub6a0EypYSwaBQvkZKbADifs5rf1nJwViDGgA" alt=""/></figure>
+
+
+
+<p><strong>Maia</strong>: Here in Maia on planet Maia A 3 a, the remains of the Palin Research Centre can be found in ruins. This old base used to be the hub of xeno research headed by Professor Palin, however due to his research, Thargoids found out about his facility and launched a devastating attack, leading to the evacuation of the base.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/_xufe_ujoh2L0D54V5y05Swe9vg8RAEDl1eRCYn4q8U3dGl13FCU8Udt_UP6jPjoYs2dba_3UfXWKag4odeWdeQohZTD0gDjcFjHudw_IYVhS_6Eo2zOHOIoZ_LhhwYbW_o9kGDbAdEg_-SYkQ" alt=""/></figure>
+
+
+
+<p><strong>Thargoid-Guardian Battlegrounds</strong>: Here is Canonn’s most recent endeavor. Here we will move from the Pleiades to the California Nebula where we will follow a short but telling story of the Hesperus and it’s crew.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/07QgQAv9li8VkCA6hoMwbCbelqSoA6mSE0YfW5prMsmlxtpekShAJGSgYWmzqiWqRXspPnG_kObHg6scXCK59RPtl7nQ5horPM7D1W8WOGtbB9c43mndS_sm4X7EiGcvb6xzt3qnkXs9tzdsZA" alt=""/></figure>
+
+
+
+<p><strong>Perseus Dark Region KC-V c2-2</strong>: Here in an asteroid cluster we can find a mysteriously damaged megaship, this ship is called the Hesperus and served long ago as a research vessel before the ship went missing. This ship was found after a distress signal was broadcast from the Hesperus after being tampered with by a nomadic clan known as the Scrivener’s who were salvaging the ship for resources. Here you can find the logs and discover the mystery of the sudden disappearance of the crew.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/M3XOqMYrOPyXurtACaTzxSlbju0597qtuS26G69mePhXkuI7IW_XEpU3e2qJdpqE7dZQcnlMGmOfvvlUSERPhxo59hjQTBjrD2qtrbV_8DJRN2FCHvGYqFHiXVl8K0UGw-ZMIO5uwhUDma8KRA" alt=""/></figure>
+
+
+
+<p><strong>Trapezium Sector YU-X c1-2</strong>: After following the logs of the Hesperus and it’s crew, we can find and locate the Anaconda, known as Proteus, that fled with the remaining survivors which found a Guardian-Thargoid battleground on planet Trapezium Sector YU-X c1-2 1a. The scientists converted the Proteus into a research center and conducted additional experiments on nearby ruins until the event that left them perished.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/8TWHMfs5UYjZxM81qzTagmOeEEEiA5g5XNy147AYpDcL1yX-zQlEYq8eGr3fMxd54kJI_q3yM3E15DjBkV5FZIi0oj2mn7LwonLQ7gquWzWDFNXWOlESqfp0SloIHvtfKHcHj67ZToPb8ljxOQ" alt=""/></figure>
+
+
+
+<p><strong>Pleione</strong>: Finally, after all this exploration, we set course for the rings of Pleione 4. Here we can find the Squirrel’s Nest Bar. Grab a drink and relax, explorer. You have earned it.</p>
+
+
+
+<p></p>
+
+
+
+<p></p>The post <a href="https://canonn.science/codex/canonn-tour/">Canonn Tour</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Where Bacteria Roam</title>
+		<link>https://canonn.science/codex/where-bacteria-roam/</link>
+		
+		<dc:creator><![CDATA[NoFoolLikeOne]]></dc:creator>
+		<pubDate>Sun, 04 Jul 2021 20:23:07 +0000</pubDate>
+				<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Geology & Surface Organics]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Bacteria]]></category>
+		<category><![CDATA[Bacterium]]></category>
+		<category><![CDATA[Biology]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=8005</guid>
+
+					<description><![CDATA[<p>CMDR Felsen83 has written a report on the current state of bacterial research. Back on ancient earth, long before humanity took to the stars, the archaic lifeform named “Bacterium” had been known to populate almost all corners of the planet. With the new campaign to sample all life in our galaxy, initiated by Vista Genomics,...</p>
+The post <a href="https://canonn.science/codex/where-bacteria-roam/">Where Bacteria Roam</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p><em><strong>CMDR Felsen83 has written a report on the current state of bacterial research.</strong></em></p>
+
+
+
+<p>Back on ancient earth, long before humanity took to the stars, the archaic lifeform named “Bacterium” had been known to populate almost all corners of the planet. With the new campaign to sample all life in our galaxy, initiated by Vista Genomics, we are beginning to see that this characteristic is by far not restricted to the cradle of humanity but seems to span at least all currently explored parts of the universe.</p>
+
+
+
+<p>So what can be found out there by the interested commander?</p>
+
+
+
+<p>As with all life known to us, bacterial have split into different species, specializing on specific means of survival. In the case of bacterial the surrounding gases seem to be the main driving factor. No bacteria have yet been found on planets with no atmosphere at all, so we have to concentrate on planets with a thin atmosphere, as our current planetary landing technology on standard issue ships doesn’t allow us to tackle thicker atmosphere descents. Following an alphabetical list of bacteria and their favored atmospheric contents:<br></p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Image</td><td>Name</td><td>Atmosphere with occurrences</td></tr><tr><td><img src="https://lh5.googleusercontent.com/BW-bLRC7-CLioKQ67NJJxD0D62JYxIzNGK0_-5vW2dYfiuH16UjB-wl0A0ZzesOEsNYWoV11yYkhtskjjkadD316-UfKYOGOBiYPfigZxoThEPX29LFUOMN1uEOP9aGU1uWtGiRi" width="98" height="99"></td><td>Bacterium Acies</td><td>Thin Neon Atmosphere</td></tr><tr><td><img src="https://lh6.googleusercontent.com/f4YwUCduiqLRgyP4rtGDSzkvfb1y4ScgbtCaB5nw0us035h-wzLxYtllE0-E-ri9b8P2lz13TZBSzAKiowhKKUVvXzSE1l2p1q2lXMhjvWmjKmMU9HdyU-uNDAESLc2wPVUNS3Q8" width="98" height="99"></td><td>Bacterium Alcyoneum</td><td>Thin Ammonia Atmosphere</td></tr><tr><td><img src="https://lh4.googleusercontent.com/RgZhPE-uJkhYgFHv9rzIu48dFr5p-4Z_W1Mz8muPOk_e9YmtIWCEYVr0QDpNoLEJIpS2D2yhQf1hzivmjHli6h02S1ZBxRqAl3cV-ZeeRUweiCnzjWMV2ABSubLxYVdwsUFPgsAN" width="98" height="99"></td><td>Bacterium Aurasus</td><td>Thin Carbon Dioxide Atmosphere</td></tr><tr><td><img src="https://lh3.googleusercontent.com/LFnRK8LNsRoaiDaiMky3rDrkiEGHuGjXWIdhxVdVPCb1EhC0buqSS3ElmIGRKSU5H6DtwG5LfM4yR4-8bQ4bOIxJk7X5ZOn7bd-8HGP18sF5aTmullYpH-k4nJ6tMBMonhKAFQGE" width="98" height="99"></td><td>Bacterium Bullaris</td><td>Thin Methane Atmosphere<br>Thin Methane-rich Atmosphere</td></tr><tr><td><img src="https://lh4.googleusercontent.com/bzq0GBomM6Z-Rf7ykt_ELv7etiuqkhs8mQeuwDKp2Fv9sYsmLZppAQwwS86Yxrm3Shm0Clnvt6yiy0a9eDrKWp6SRaGf2jY3g9BnaQ8mNr7PDqmXfgoeuez8D-_aoU_zm5dp5qg9" width="98" height="99"></td><td>Bacterium Cerbrus</td><td>Thin Sulphur Dioxide Atmosphere<br>Thin Water Atmosphere<br>Thin Water-rich Atmosphere</td></tr><tr><td><img src="https://lh5.googleusercontent.com/R4VEcSwugpIJbul3jrejnyiA3Fuee3MkjIylclO6aBCEpfe3EyORXATTqtbM4sASg4WkLsDnkFBsNveikw9skispvYe3JXQwdGzSUbofJPEqvgb5uQyseXa_1PezHJP-ILN7i5F_" width="98" height="99"></td><td>Bacterium Informem</td><td>Thin Nitrogen Atmosphere</td></tr><tr><td><img src="https://lh3.googleusercontent.com/VAXP3TBgFYJTm4VFY_JY17KTLPin9HFIwJy04x4hUb5Tq9HIbnP1FyrgZRdIlUMKF7ac3E_H0AoQriFpcXjRQLqk6Ow_yIjXSYne4zJdIBf0V3l2iLPRtv8nCeJ2asixhJZh7BPQ" width="98" height="99"></td><td>Bacterium Nebulus</td><td>Thin Helium Atmosphere</td></tr><tr><td><img src="https://lh3.googleusercontent.com/R1f6j3h06cFvsfRM8V28NKi1xHjuaECJ6INC1xv4SPiTDIq2wdsPBePIwIWZLTAy7Ja36UqSeg8AlUIy1gdJo5CRAkylQ4l72_JuJN3GXlM7pa29vdJGucyAFavvblAUeFV4GgJj" width="98" height="99"></td><td>Bacterium Vesicula</td><td>Thin Argon Atmosphere</td></tr><tr><td><img src="https://lh3.googleusercontent.com/x6NYGHSMvxOnxFKwUIalfFTZjsQZ6tEiFfcm8XFQhmKO09jGfFT0tLNPiMPdsFEX1wDJb_GqHsCVDPAokNExReGirinOMrReV0pdPbeTr-bqsfMUiolhw6EZN0GZj4gJLvsnjWmM" width="98" height="99"></td><td>Bacterium Volu</td><td>Thin Oxygen Atmosphere</td></tr></tbody></table></figure>
+
+
+
+<p><br>Of course there is no general rule without exceptions. Some bacteria don’t rely on the right atmosphere alone. These species have specialized in exploiting the opportunity of free energy that is offered by most kinds of volcanism.<br><br>Four such species have currently been found (again in alphabetical order)<br></p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Picture</td><td>Name</td><td>Volcanism (according to Codex)</td><td>Atmospheres with current occurrences</td></tr><tr><td><img src="https://lh4.googleusercontent.com/Qo_SmBj7DIqcrCfwAraHWFks7oG4x3i3dIMj1u1xjfCcX4fKBUtcHoz9NtrHS3hu5sjilEhwHPif6NhJJkYx5vJ0rcZluzUMAQ_tsP14PnXaXBMxtomgtYPkHzGCr4B_ray5jqNz" width="98" height="99"></td><td>Bacterium Omentum</td><td>Nitrogen Volcanism</td><td>Thin Neon</td></tr><tr><td><img src="https://lh3.googleusercontent.com/awrTXkV0o22TRzAYqac78aCn_aN4DbE0P4nEhRAUZlv7ZrdzylwV96QR9Wu-2Q1K2Be9JozvmsxVMv8jBbUnvcNsT3NdsR_jlIFeMc0EGhJxXhyVRnOquL5geijx5bYTGW8QzB4q" width="98" height="99"></td><td>Bacterium Scopulum</td><td>Carbon based Volcanism<br>(CO2 and CH4)</td><td>Thin Neon<br>Thin Neon-rich&nbsp;</td></tr><tr><td><img src="https://lh5.googleusercontent.com/KVZg4us7gG5mQqzwyt1QbYupg79moI4HuzSme5twIH0aNT2XQJbDwJvqChiN8y3-E7in1Uo0GimafpoXx-La5d1Cw4sLlLtfgA0G0f5PoIArejH0o5Cz9n_hAoOz7B2OuJ21OIr3" width="98" height="99"></td><td>Bacterium Tela</td><td>Helium Volcanism<br>Iron Volcanism<br>Silicate Volcanism</td><td>Thin Carbon-dioxide<br>Thin Neon-rich<br>Thin Sulphur-dioxide<br>Thin Water</td></tr><tr><td><img src="https://lh5.googleusercontent.com/9hkJuCQyhIjBrhTOPJqPmWi8AMeLUk9F-wTQIo7lkOJJpX-8lVHqRIp5bdl0mDg3QBmpNb5TKHURclZwfe7U6luWWz15KqzikNK7DG0CpCtzei3_TJK7RgvR1fjrmsdXkE7hNisn" width="98" height="99"></td><td>Bacterium Verrata</td><td>Water Volcanism</td><td>Thin Neon<br>Thin Neon-rich</td></tr></tbody></table></figure>
+
+
+
+<p></p>
+
+
+
+<p>The attentive reader will notice two things:<br>&#8211; the word “current” in the occurrences column<br>&#8211; the “according to codex” in the volcanism column</p>
+
+
+
+<p>The first is due to the fact that these bacteria are usually very hard to find. So currently the database at Canonn Research Institute doesn’t have that many entries for these species. Therefore we cannot assume that this list is already complete.</p>
+
+
+
+<p>For the Bacterium Tela we can see that this species can exist on various different planets. To date we cannot really see the dependence on the volcanism listed in the universal codex. This bacterium exists both on no-volcanism planets and also on planets with a variety of different volcanism according to the Universal Cartographics catalogue:</p>
+
+
+
+<ul><li>No Volcanism (majority)</li><li>Minor Silicate Vapour Geysers</li><li>Major Silicate Vapour Geysers</li><li>Minor Nitrogen Magma</li><li>Minor Metallic Magma</li><li>Water Magma</li><li>Major Water Magma</li></ul>
+
+
+
+<p>For now we can only assume that all entries that are not iron or silicate related have some helium component to them. This includes any helium volcanism that doesn’t fall into the volcanism definition according to Universal Cartographics.</p>
+
+
+
+<p>As for the splitting into subspecies, bacteria have evolved into different branches that either specialize in the absorption of starlight or feed on the elements provided by their host planets.</p>
+
+
+
+<p>The starlight dependent species have developed the following color scheme:</p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Star Class</td><td>Subspecies Color</td></tr><tr><td>O</td><td>Turquoise</td></tr><tr><td>B</td><td>Grey</td></tr><tr><td>A</td><td>Yellow</td></tr><tr><td>F</td><td>Lime</td></tr><tr><td>G</td><td>Emerald</td></tr><tr><td>K</td><td>Green</td></tr><tr><td>M</td><td>Teal</td></tr><tr><td>L</td><td>Sage</td></tr><tr><td>T</td><td>Red</td></tr><tr><td>T-Tauri</td><td>Maroon</td></tr><tr><td>Herbig AE</td><td>Not Found Yet</td></tr><tr><td>Y</td><td>Mauve</td></tr><tr><td>Wolf-Rayet</td><td>Amethyst</td></tr><tr><td>White-Dwarf</td><td>Ocher</td></tr><tr><td>Neutron</td><td>Indigo</td></tr></tbody></table></figure>
+
+
+
+<p></p>
+
+
+
+<p>The bacterial species that have developed into this scheme are:</p>
+
+
+
+<ul><li>Bacterium Aurasus</li><li>Bacterium Alcyoneum</li><li>Bacterium Cerbrus</li></ul>
+
+
+
+<p>Among the rest of the bacterial world we have a split into Grade 3 for the volcanism dependent and Grade 4 for the remaining atmospheric dependent and material consuming species.</p>
+
+
+
+<p>Grade 3 dependent:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Material / </strong><strong><br></strong><strong>Species</strong></td><td><strong>Mercury</strong></td><td><strong>Niobium</strong></td><td><strong>Tin</strong></td><td><strong>Tungsten</strong></td><td><strong>Molybdenum</strong></td><td><strong>Cadmium</strong></td></tr><tr><td><strong>Scopulum</strong></td><td>Peach</td><td>Red</td><td>Mulberry</td><td>Aquamarine</td><td>Lime</td><td>White</td></tr><tr><td><strong>Tela</strong></td><td>Orange</td><td>Magenta</td><td>Cobalt</td><td>Green</td><td>Yellow</td><td>Gold</td></tr><tr><td><strong>Omentum</strong></td><td>White</td><td>Peach</td><td>Red</td><td>Blue</td><td>Aquamarine</td><td>Lime</td></tr><tr><td><strong>Verrata</strong></td><td>Red</td><td>Mulberry</td><td>Blue</td><td>Lime</td><td>White</td><td>Peach</td></tr></tbody></table></figure>
+
+
+
+<p>Grade 4 dependent:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Material / </strong><strong><br></strong><strong>Species</strong></td><td><strong>Technetium</strong></td><td><strong>Tellurium</strong></td><td><strong>Polonium</strong></td><td><strong>Ruthenium</strong></td><td><strong>Antimony</strong></td><td><strong>Yttrium</strong></td></tr><tr><td><strong>Nebulus</strong></td><td>Cyan</td><td>Green</td><td>Gold</td><td>Orange</td><td>Magenta</td><td>Cobalt</td></tr><tr><td><strong>Acies</strong></td><td>Lime</td><td>White</td><td>Magenta</td><td>Cobalt</td><td>Cyan</td><td>Aquamarine</td></tr><tr><td><strong>Vesicula</strong></td><td>Gold</td><td>Red</td><td>Orange</td><td>Mulberry</td><td>Cyan</td><td>Lime</td></tr><tr><td><strong>Informem</strong></td><td>Aquamarine</td><td>Yellow</td><td>Lime</td><td>Gold</td><td>Red</td><td>Cobalt</td></tr><tr><td><strong>Volu</strong></td><td>Lime</td><td>Cyan</td><td>Aquamarine</td><td>Cobalt</td><td>Red</td><td>Gold</td></tr><tr><td><strong>Bullaris</strong></td><td>Gold</td><td>Lime</td><td>Yellow</td><td>Aquamarine</td><td>Cobalt</td><td>Red</td></tr></tbody></table></figure>
+
+
+
+<p></p>
+
+
+
+<p>Here at Canonn Research Institute we also try to predict the existence of specific bacterial species according to the known properties of planets. Unfortunately this currently seems to be a futile attempt. While we can predict the kind of bacteria that might exist on a specific planet, we are unable to tell whether a planet carries bacteria at all. The reasons for this are yet unknown. Speculations are that either bacteria haven’t spread to certain planets, or additional criteria have to be met so that they could exist on these currently barren planets.<br><br>Currently prediction attempts according to the following parameters have been made:</p>
+
+
+
+<ul><li> Average Surface Temperature</li><li> Gravity</li><li> Atmospheric pressure</li><li> Distance from the systems main star</li><li> Body radius</li></ul>
+
+
+
+<p>Also different combinations of these parameters.</p>
+
+
+
+<p>While some of these parameters show clear boundaries, like average surface temperature and gravity, the same properties can be attributed to the corresponding atmospheric compositions and planet types (metal-rich, HMC, rocky body, rocky icy planet, icy planet) at large. Still we find very similar planets within these parameters, that contain no life at all.<br><br>Hopefully we can one day find the missing parameters so that we can tap into the vast catalogue of systems and planets at Universal Cartographics to go on targeted hunts for specific species or even subspecies.</p>
+
+
+
+<p>If you would like to conduct your own research into any of the Biology found in the Galaxy, you can access live data from <a href="https://canonn.fyi/biosheet" target="_blank" rel="noreferrer noopener">https://canonn.fyi/biosheet</a> </p>
+
+
+
+<p></p>The post <a href="https://canonn.science/codex/where-bacteria-roam/">Where Bacteria Roam</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Canonn Method</title>
+		<link>https://canonn.science/codex/the-canonn-method/</link>
+		
+		<dc:creator><![CDATA[NoFoolLikeOne]]></dc:creator>
+		<pubDate>Sat, 05 Dec 2020 18:44:28 +0000</pubDate>
+				<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Research Notes]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Papers]]></category>
+		<category><![CDATA[Research]]></category>
+		<category><![CDATA[Scientific Method]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=7858</guid>
+
+					<description><![CDATA[<p>What is the Canonn method I hear you ask? Well, it is nothing more than the scientific method that underpins all good science. That and gallons of gin and mountains of biscuits. The scientific method is a process for designing experimentation that helps us to unravel the secrets of the galaxy.&#160; The overall process involves...</p>
+The post <a href="https://canonn.science/codex/the-canonn-method/">The Canonn Method</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>What is the Canonn method I hear you ask? Well, it is nothing more than the scientific method that underpins all good science. That and gallons of gin and mountains of biscuits.</p>
+
+
+
+<p>The scientific method is a process for designing experimentation that helps us to unravel the secrets of the galaxy.&nbsp;</p>
+
+
+
+<p>The overall process involves making<a href="https://en.wikipedia.org/wiki/Conjectures"> </a>hypotheses, deriving predictions from them as logical consequences, and then carrying out experiments based on those predictions to determine whether the original hypothesis was correct.</p>
+
+
+
+<p>The steps are not strictly formulaic, It is true that great scientific advances can be made by just sitting in a bath and having an apple drop on your head but here at Canonn we think that this is the best approach. The Canonn method… not sitting in a bath.</p>
+
+
+
+<h4>Ask a question</h4>
+
+
+
+<p>All great scientific discoveries start with a great question, like “Who would win in a fight? A lion or a shark with lasers?” The question is usually prompted by observations from the real world. For instance in the 20th Century people had observed that toast always lands butter side down and that cats always land on their feet. This prompted the question, “What would happen if you put buttered toast on a cat’s back and dropped it?”</p>
+
+
+
+<h4>Do background research</h4>
+
+
+
+<p>We would like to encourage you to do a bit of background research before you run off and start working on your great thesis. Check <a href="https://canonn.science">canonn.science</a> to see if anyone else has done any work in the same area, talk to other members on our <a href="https://canonn.fyi/discord" target="_blank" rel="noreferrer noopener nofollow" title="https://canonn.fyi/discord">discord </a>and search the galweb. For instance I managed to find an ancient archive of 21st century films showing actual cat-toast experiments. Fascinating. </p>
+
+
+
+<figure class="wp-block-embed-youtube aligncenter wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="Flying Horse - Gatorrada (Cat-Toast)" width="640" height="360" src="https://www.youtube.com/embed/Z8yW5cyXXRc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><figcaption>Actual footage of a scientist at work in the 21st Century</figcaption></figure>
+
+
+
+<h4>Construct A Hypothesis</h4>
+
+
+
+<p>A hypothesis is an educated guess about how things work. It is an attempt to answer your question with an explanation that can be tested. A good hypothesis allows you to then make a prediction. For instance:</p>
+
+
+
+<p>If I put buttered toast on a cat’s back and then drop them, then the cat and toast will spin in mid air.</p>
+
+
+
+<p>When you document your great discovery you should state both your hypothesis and the resulting prediction you will be testing.&nbsp;</p>
+
+
+
+<p>A good hypothesis should also be falsifiable in other words there should be an outcome that proves the hypothesis to be incorrect.</p>
+
+
+
+<h4>Experiment&nbsp;</h4>
+
+
+
+<p>Your experiment tests whether your prediction is accurate and thus your hypothesis is supported or not.&nbsp; In Canonn most of our experiments involve a great deal of data gathering, whether that is calculating AX weapon damage against thargoids or calculating when two orbiting bodies will collide. You should take multiple measurements so that you can identify and quantify errors.</p>
+
+
+
+<p>Often there will be more data than can be collected by a single commander so you should be careful to document your data collection methodology, so that the data collection can be conducted by your peers. The galaxy is bigger than you can imagine and you will need help from other members.&nbsp;</p>
+
+
+
+<p>Documenting your methodology is important or people trying to replicate your experiment may well come to the wrong conclusions.&nbsp;</p>
+
+
+
+<p>For instance if you don’t specify how to attach the toast to the cat, someone may attempt to do it with a hammer and nails.</p>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://canonn.science/wp-content/uploads/2020/12/methodology_is-_important-1024x576.png" alt="" class="wp-image-7864" srcset="https://canonn.science/wp-content/uploads/2020/12/methodology_is-_important-1024x576.png 1024w, https://canonn.science/wp-content/uploads/2020/12/methodology_is-_important-300x169.png 300w, https://canonn.science/wp-content/uploads/2020/12/methodology_is-_important-600x338.png 600w, https://canonn.science/wp-content/uploads/2020/12/methodology_is-_important-768x432.png 768w, https://canonn.science/wp-content/uploads/2020/12/methodology_is-_important.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h4>Analyse your data and draw conclusions</h4>
+
+
+
+<p>Once you have gathered your data you need to analyse it and see whether it supports your hypothesis or not. The data from your experimentation may lead you to ask new questions and form new hypotheses and so the process can begin anew.</p>
+
+
+
+<p>Now I know that it is upsetting when the data does not support your hypothesis given that you have invested so much in it, but your negative results are just as useful as your positive results but <strong><em>not</em></strong> if you keep them to yourself. So that brings us to the final section.&nbsp;</p>
+
+
+
+<h4>Communicate Your Results</h4>
+
+
+
+<p>We would dearly love to have your experiment documented on the <a href="https://canonn.science">canonn.science</a> website whether your hypothesis was proven or not. This will give our scientists the opportunity to reproduce your results and provide additional supporting data.&nbsp;</p>
+
+
+
+<p>Successful papers will communicate clearly the hypothesis, experimental methodology, data and conclusions.</p>
+
+
+
+<p>We have had a number of scientists adopt the rather bizarre affection that they are players in some kind of simulation. Such papers will be rejected. We expect our scientists to be grounded in the real galaxy. Well not literally grounded. I think you know what I’m getting at.</p>
+
+
+
+<p>Good luck with your work and I look forward to reading your papers.&nbsp;</p>The post <a href="https://canonn.science/codex/the-canonn-method/">The Canonn Method</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Recent Community-created Thargoid Link puzzle</title>
+		<link>https://canonn.science/news/recent-community-created-thargoid-link-puzzle/</link>
+		
+		<dc:creator><![CDATA[NoFoolLikeOne]]></dc:creator>
+		<pubDate>Sun, 03 Feb 2019 13:13:50 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Thargoid Link Puzzle]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=6598</guid>
+
+					<description><![CDATA[<p>Following is the write-up from LCU No Fool Like One about the recent community-created Thargoid Link puzzle.</p>
+<p>Congratulations to Commander Ethzero for solving the little puzzle we set to commemorate the departure of Ed Lewis from the Pilot's Federation.</p>
+The post <a href="https://canonn.science/news/recent-community-created-thargoid-link-puzzle/">Recent Community-created Thargoid Link puzzle</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<h3>Following is the write-up from LCU No Fool Like One about the recent community-created Thargoid Link puzzle.</h3>
+<p>Congratulations to <strong>Commander Ethzero</strong> for solving the little puzzle we set to commemorate the departure of Ed Lewis from the Pilot&#8217;s Federation. I have been watching with great interest the work you have all been doing to break the code and it was nice to see you <strong>working together in the open</strong> which is very much the ethos of Canonn.</p>
+<p>But before I move on to the debriefing I would first like to apologise if anyone was misled about the nature of the task. I had thought that it would be obvious that this was not a genuine message from the Thargoids but I had not anticipated that people’s desire for a true puzzle of this nature would lead them to suspend disbelief and leave some feeling let down.</p>
+<p>I assure you that if we ever organise an event of this nature outside of one of our periodic Canonnball events then we will make it clearer that it is indeed community created.</p>
+<p>With that apology out of the way I would like to give you a breakdown on how you could have arrived at the solution and the tools you could have used to help you along the way. I will not be revealing the answer but this debriefing will allow you to arrive at the solution very quickly.</p>
+<h6>PLEASE READ NO FURTHER IF YOU WISH TO SOLVE THE PUZZLE ON YOUR OWN</h6>
+<p>There are a number of clues in the news post that are there to help you solve the puzzle. There are additional clues in the Hutton Orbital Radio Show linked below that will help with filling in some gaps in your knowledge. The main clues are as follows:</p>
+<p><!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+<audio class="wp-audio-shortcode" id="audio-6598-1" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="http://media.forthemug.com/190131edleaving.mp3?_=1" /><a href="http://media.forthemug.com/190131edleaving.mp3">http://media.forthemug.com/190131edleaving.mp3</a></audio></p>
+<p>&nbsp;</p>
+<p>The Clues</p>
+<ul>
+<li>The message was for Ed Lewis</li>
+<li>There was a hidden image of a system in the first part of the message</li>
+<li>The second part of the message is a trinary sequence</li>
+<li>The system in the image is the key to unlocking the second part of the message</li>
+</ul>
+<p>The most important part of this task was to convert the trinary sequence into an ascii string.</p>
+<p>The alien signal had three tones low medium and high and were grouped into three. A trinity of trinary tits. These are represented with the numerals 1 2 and 3 You could decode these by ear, but the easiest way is to use a spectrum analyser. You can find some details on how to do this here: <strong><a href="https://manual.audacityteam.org/man/spectrogram_view.html" target="_blank" rel="noopener"><em>Spectrogram View &#8211; Audacity Help</em> Manual</a></strong></p>
+<p>If you don’t understand number bases you might find this guide useful: <em><a href="http://www.steves-internet-guide.com/binary-numbers-explained/" target="_blank" rel="noopener"><strong>Binary Numbers Explained – Beginners Guide</strong></a></em></p>
+<p>In this instance we made it easy for you by encoding high as 2 medium as 1 and low as 0. However genuine Thargoid messages are binary and counter-intuitively encode high as 0 and low as 1, so a thorough commander would have explored all possibilities.</p>
+<p>Once you have transcribed your trinary numbers you can then use this lookup table to work out the ascii numerals.</p>
+<p><img class="aligncenter wp-image-6599" src="https://canonn.science/wp-content/uploads/2019/02/Table1-300x32.jpg" alt="" width="798" height="85" srcset="https://canonn.science/wp-content/uploads/2019/02/Table1-300x32.jpg 300w, https://canonn.science/wp-content/uploads/2019/02/Table1-1024x110.jpg 1024w, https://canonn.science/wp-content/uploads/2019/02/Table1-600x65.jpg 600w, https://canonn.science/wp-content/uploads/2019/02/Table1-768x83.jpg 768w, https://canonn.science/wp-content/uploads/2019/02/Table1.jpg 1801w" sizes="(max-width: 798px) 100vw, 798px" /></p>
+<p>The resulting string is gibberish:</p>
+<pre> vimphkrqeygnibhofsscdfmubiovwnxcut</pre>
+<p>However one of our clues is that the system is the key to unlocking the message so that suggests that the message is a Vigenère cipher. The Vigenère cipher was once known as the unbreakable cyper and it took three centuries to break it. You can find out more here: <em><a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" target="_blank" rel="noopener"><strong>Vigenère cipher &#8211; Wikipedia</strong></a></em></p>
+<p>What you may find surprising is that a number of you came very close to solving the puzzle by simply guessing the content of the message.</p>
+<p>The cypher is decoded using the keyword, however if you guess the message you can put the message into a decoder and it will decode the message to show the key. If the words you guess are not at the beginning of the message you can simply pad the front of your guess until you see something that could look like the keyword.</p>
+<p><a href="https://kayahr.github.io/canonn-decryptor/#/?data=N4IgdghgtgpiBcIQBoQEswAcCuAXAzggNqgY64JIC%2BAulUA%3D"><img class="aligncenter wp-image-6602" src="https://canonn.science/wp-content/uploads/2019/02/CanonnDecryptor-1-300x260.jpg" alt="" width="803" height="696" srcset="https://canonn.science/wp-content/uploads/2019/02/CanonnDecryptor-1-300x260.jpg 300w, https://canonn.science/wp-content/uploads/2019/02/CanonnDecryptor-1-1024x887.jpg 1024w, https://canonn.science/wp-content/uploads/2019/02/CanonnDecryptor-1-600x520.jpg 600w, https://canonn.science/wp-content/uploads/2019/02/CanonnDecryptor-1-768x666.jpg 768w, https://canonn.science/wp-content/uploads/2019/02/CanonnDecryptor-1.jpg 1319w" sizes="(max-width: 803px) 100vw, 803px" /></a></p>
+<p><em><strong><a href="https://kayahr.github.io/canonn-decryptor/#/?data=N4IgdghgtgpiBcIQBoQEswAcCuAXAzggNqgY64JIC%2BAulUA%3D" target="_blank" rel="noopener">Canonn Decryptor Tool</a></strong></em></p>
+<p>So let’s assume that you have got this far and not been able to guess the message or any parts of its content. You have no other choice than to find out the secret key so you will need to view the hidden message in the file.</p>
+<p>Once again you can use the spectrum analysis tool to view the image in the message. A number of commanders did a truly excellent job of this. In fact they did a far better job than I was able to do myself.</p>
+<p>The image you uncover will give you some clues about the system you are looking for. You should record as many facts about the system as you can so that you can compare it with potential candidates.</p>
+<p>I am not so cruel as to force you to search through the whole EDSM database for matching systems. If you remember the first clue is that the message is somehow connected with Ed Lewis. The audio broadcast on the Gnosis can give you some ideas about what that connection may be.</p>
+<p>If that gives you some ideas about potential systems then you should look them up on EDSM to see if they match the image from the audio. Or you could skip that step and just use the names as the keywords in the decryptor and the answer should simply pop out.</p>
+<p>I hope that this tutorial has been helpful. Good luck uncovering the message.</p>
+<p><em><strong>CMDR LCU No Fool Like One</strong></em></p>The post <a href="https://canonn.science/news/recent-community-created-thargoid-link-puzzle/">Recent Community-created Thargoid Link puzzle</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		<enclosure url="http://media.forthemug.com/190131edleaving.mp3" length="13281610" type="audio/mpeg" />
+
+			</item>
+		<item>
+		<title>Thargoid Data: USS Logging</title>
+		<link>https://canonn.science/codex/thargoid-data-uss-logging/</link>
+		
+		<dc:creator><![CDATA[Timsk]]></dc:creator>
+		<pubDate>Thu, 29 Mar 2018 12:11:23 +0000</pubDate>
+				<category><![CDATA[Codex]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Xeno-Technology]]></category>
+		<category><![CDATA[Signal Source]]></category>
+		<category><![CDATA[Thargoids]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=5342</guid>
+
+					<description><![CDATA[<p>The Thargoid Data Gathering project has been a great success. We now have a wealth of data plotting the extent of Thargoid incursions.</p>
+<p>However the nature of the Thargoid Threat has changed substantially since they have entered the bubble. Previously we would be able to tell from the threat levels what type of Thargoid vessels we would encounter but now it is not possible to distinguish a Medusa from a dozen scouts using automated equipment alone.</p>
+<p>Given the changing nature of the threat, and the success of the previous program, Canonn R&#038;D have upgraded the USS-Survey device to provide some additional features.</p>
+The post <a href="https://canonn.science/codex/thargoid-data-uss-logging/">Thargoid Data: USS Logging</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<h3>Continuing Thargoid Data Gathering</h3>
+<p>The <a href="https://canonn.science/codex/thargoid-data-gathering/" target="_blank" rel="noopener noreferrer">Thargoid Data Gathering project</a> has been a great success. We now have a wealth of data plotting the extent of Thargoid incursions.</p>
+<p>However the nature of the Thargoid Threat has changed substantially since they have entered the bubble. Previously we would be able to tell from the threat levels what type of Thargoid vessels we would encounter but now it is not possible to distinguish a Medusa from a dozen scouts using automated equipment alone.</p>
+<p>Given the changing nature of the threat, and the success of the previous program, Canonn R&amp;D have upgraded the USS-Survey device to provide some additional features.</p>
+<p>We now have a supercruise USS logging interface that allows you submit USS reports without having to drop in. This gives us an idea of the distribution of USS and can also tell us the frequency.</p>
+<p>You will notice that when you drop in on a Non Human Signal Source you are presented with a selection of icons which you can use to tell us the nature of the encounter. For instance if you encounter four scouts simply click four times on the scout icon and then click the green button to submit the report.</p>
+<p>You can click on the text of the report to edit it directly. This also gives you access to a Thargoid Logo identification section of the form which you can use to identify and report on the Thargoid logogram.</p>
+<p>Commanders on the Xbox and PlayStation can also contribute by manually entering data from a form. We hope that one day you too will be able to use the automated tools.</p>
+<p>Your participation in this project can help us in a number of ways:</p>
+<ul>
+<li>It will enable us to create new maps with reliable information about where to find probes and sensors for interaction with <a href="https://canonn.science/codex/the-unknown-structure/" target="_blank" rel="noopener noreferrer">Thargoid Surface Sites</a>.</li>
+<li>It will allow us to map where we can expect hostile and neutral interactions with more accuracy.</li>
+<li>It will also help us track activity in systems which have been highlighted by the <a href="https://canonn.science/codex/eagle-eye-installations/" target="_blank" rel="noopener noreferrer">Eagle Eye Unregistered Communications Beacons</a> so we can draw charts of activity over time.</li>
+</ul>
+<h3>Live Chart of Collected Data</h3>
+<p style="text-align: center;"><iframe width="800" height="488" seamless="" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQGZ9meiqW_-5iDW2MKvwTBXK-RXJkCW53sNELRUH0jp99YZ1Qaj8yTYyFP89nwR803tHFRfEmENdjI/pubchart?oid=1931169939&amp;format=interactive"></iframe></p>
+<h3>Data Gathering</h3>
+<p>To help with the effort, the following data gathering tools have been provided:</p>
+<ul>
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeQyYdpD79L7v0qL6JH09cfPZw_7QJ_3d526jweaS92VmK-ZQ/viewform" target="_blank" rel="noopener noreferrer">Thargoid hyperdiction reporting form</a></li>
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOBbUTiD64FyyzkIeZfO5UMfqeuU2lsRf3_Ulh7APddd91JA/viewform" target="_blank" rel="noopener noreferrer">Supercruise USS reporting Form</a></li>
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdspuO9LP1byQFx4oeMNq9FT4eo34mgqpQTo-6oYZOXoX0PtA/viewform" target="_blank" rel="noopener noreferrer">Thargoid battlezone reporting form</a></li>
+<li><a href="https://github.com/NoFoolLikeOne/EDMC-USS-Survey/blob/master/README.md" target="_blank" rel="noopener noreferrer">EDMC plugin (by LCU No Fool Like One)</a></li>
+</ul>
+<p>Please use these methods of reporting when encountering Thargoids as this will help add to the data we have already captured.</p>
+<p><img class="aligncenter wp-image-5360" src="https://canonn.science/wp-content/uploads/2018/03/LCU_USSSurveyPlugin-screenshot-300x181.png" alt="" width="800" height="483" srcset="https://canonn.science/wp-content/uploads/2018/03/LCU_USSSurveyPlugin-screenshot-300x181.png 300w, https://canonn.science/wp-content/uploads/2018/03/LCU_USSSurveyPlugin-screenshot-600x363.png 600w, https://canonn.science/wp-content/uploads/2018/03/LCU_USSSurveyPlugin-screenshot.png 763w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<div class="w-popup align_left"><div class="w-btn-wrapper"><a class="w-popup-trigger type_btn w-btn us-btn-style_1" style="font-size:" href="javascript:void(0)"><span class="w-btn-label">EDMC Installation Instructions</span></a></div><div class="w-popup-overlay" style="background:rgba(0,0,0,0.85);"></div><div class="w-popup-wrap"><div class="w-popup-box animation_fadeIn with_title" style="width:600px;"><div class="w-popup-box-h"><div class="w-popup-box-title" style="color:#ffffff;background:#263238;">How to use the EDMC Thargoid Encounter USS Survey plugin</div><div class="w-popup-box-content" style="padding:40px;background:#37474f;color:#cfd8dc;"><p>1. For PC users, first you will need to download and install the <a href="https://github.com/Marginal/EDMarketConnector/wiki/Installation-%26-Setup" target="_blank" rel="noopener noreferrer">Elite Dangerous Market Connector</a>.</p>
+<p>2. Then download the <a href="https://github.com/NoFoolLikeOne/EDMC-USS-Survey/blob/master/README.md" target="_blank" rel="noopener noreferrer">USS survey plugin</a> (in the quote below) and unzip it in the EDMC plugin folder.</p>
+<p>As well as automatically logging USS and Hyperdictions it will also allow you to click through to the manual forms with some of the details pre-filled.</p>
+<p>EDMC use is only possible on PC, so if you are using Xbox or PS4 you will need to use the reporting forms.</p>
+</div></div></div><div class="w-popup-closer" style="background:#37474f;color:#cfd8dc;"></div></div></div>
+<h3>Advice for Scientists</h3>
+<ul>
+<li>Always carry a Xeno Scanner. You may gather new data, and it will make the identification of the signal a lot easier.</li>
+<li>Always take a screenshot of the Thargoid Vessel AND its marking from your contacts screen or your HUD. This will be especially important if you find a new one.</li>
+<li>Any observation of new behaviour will be very welcome. Also note any tests you carry out and the result.</li>
+</ul>
+<h3>Results</h3>
+<p style="font-weight: 400;"><span style="font-weight: 400;">The data you provide will help us analyse both the spread and regularity of these interactions, for the benefit of all.</span></p>
+<ul style="font-weight: 400;">
+<li style="font-weight: 400;"><span style="font-weight: 400;">The raw data captured is available for viewing in a Google Sheet </span><a href="https://docs.google.com/spreadsheets/d/1IA3HxotFUXh9qJi3v-wtcenvMF-znamfQ8JtNJbiZdo/edit#gid=1466834969" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">visible here</span></a><span style="font-weight: 400;">.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">USS Survey and Supercruise information is available in a google sheet </span><a href="https://docs.google.com/spreadsheets/d/10SwarpGE6208lY0GpvSZogdk8s0m0bQXoZlZCWkDe1w/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">visible here</span></a></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">This data is plotted on a</span><a href="https://map.canonn.technology/thargoids-combo.html" target="_blank" rel="noopener noreferrer"> <span style="font-weight: 400;">3d Map here</span></a><span style="font-weight: 400;"> (please note, the data takes a little while to load on first opening).</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">The Canonn R&amp;D Tool for checking and comparing Thargoid markings is</span><a href="https://tools.canonn.technology/thargoid_glyphs/" target="_blank" rel="noopener noreferrer"> <span style="font-weight: 400;">available here</span></a><span style="font-weight: 400;">.</span></li>
+</ul>
+<h3>Thank you!</h3>
+<p>&nbsp;</p>The post <a href="https://canonn.science/codex/thargoid-data-uss-logging/">Thargoid Data: USS Logging</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Canonn R&#038;D &#8211; Thargoid Glyph Tool</title>
+		<link>https://canonn.science/news/canonn-rd-thargoid-glyph-tool/</link>
+		
+		<dc:creator><![CDATA[Canonn Research]]></dc:creator>
+		<pubDate>Fri, 06 Oct 2017 18:57:12 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Glyph]]></category>
+		<category><![CDATA[Symbol]]></category>
+		<category><![CDATA[Thargoids]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=3843</guid>
+
+					<description><![CDATA[<p>The amazing Canonn R&#038;D team bring you another tool to assist while investigating the mysteries of the Thargoids.  This time to help in visualising and checking off the various Thargoid Glyph combinations seen on Thargoid vessels, and originally on Barnacles.</p>
+The post <a href="https://canonn.science/news/canonn-rd-thargoid-glyph-tool/">Canonn R&D – Thargoid Glyph Tool</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>The amazing Canonn R&amp;D team bring you another tool to assist while investigating the mysteries of the Thargoids.  This time to help in visualising, checking off and sharing the various Thargoid Glyph combinations seen on Thargoid vessels.</p>
+<p><a href="https://tools.canonn.tech/thargoid_glyphs/" target="_blank" rel="noopener noreferrer"><img class="aligncenter wp-image-3844" src="https://canonn.science/wp-content/uploads/2017/10/ThargoidGlyphsTool-300x246.png" alt="Thargoid Glyph Tool" width="600" height="492" srcset="https://canonn.science/wp-content/uploads/2017/10/ThargoidGlyphsTool-300x246.png 300w, https://canonn.science/wp-content/uploads/2017/10/ThargoidGlyphsTool-768x631.png 768w, https://canonn.science/wp-content/uploads/2017/10/ThargoidGlyphsTool-1024x841.png 1024w, https://canonn.science/wp-content/uploads/2017/10/ThargoidGlyphsTool-600x493.png 600w, https://canonn.science/wp-content/uploads/2017/10/ThargoidGlyphsTool.png 1110w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>Select the Inner Ring component, and then choose the corresponding Outer Ring component to step through all the various combinations until you get the mix you want.</p>
+<p>Copy from the Image field to paste a direct link to the chosen combination wherever you want to refer to and display that glyph combination, on the forums or in a Discord chat.</p>
+<p>This tool will continue to be extended and further information added as more analysis becomes available.</p>
+<p>Direct link: <a href="https://tools.canonn.tech/thargoid_glyphs/" target="_blank" rel="noopener noreferrer">https://tools.canonn.tech/thargoid_glyphs/</a></p>
+<p>This work would not have been possible without the pioneering research of <em><strong>CMDR Orodir</strong></em> and other commanders documented here <a href="https://forums.frontier.co.uk/threads/xenobiology-study-of-thargoid-ship-logograms-compendium.379844/">https://forums.frontier.co.uk/threads/xenobiology-study-of-thargoid-ship-logograms-compendium.379844/</a></p>
+
+
+<p></p>The post <a href="https://canonn.science/news/canonn-rd-thargoid-glyph-tool/">Canonn R&D – Thargoid Glyph Tool</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Cmdr Backflaps &#8211; A Guide to Analysing Octal Messages</title>
+		<link>https://canonn.science/media/cmdr-backflaps-a-guide-to-analysing-octal-messages/</link>
+		
+		<dc:creator><![CDATA[Canonn Research]]></dc:creator>
+		<pubDate>Wed, 05 Jul 2017 14:16:17 +0000</pubDate>
+				<category><![CDATA[Media]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Octal]]></category>
+		<category><![CDATA[Unknown Link]]></category>
+		<category><![CDATA[Unknown Probe]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=2726</guid>
+
+					<description><![CDATA[<p>Cmdr Backflaps (also known as Kal/Kalearne) presents a useful guide to analysing octal messages from the Unknown Link. This is the method used for locating additional Unknown Sites, but is also relevant to analysing Unknown Probe messages. Cmdr Redden Alt Mer then gives details on how to translate the transcribed audio into a set of distances...</p>
+The post <a href="https://canonn.science/media/cmdr-backflaps-a-guide-to-analysing-octal-messages/">Cmdr Backflaps – A Guide to Analysing Octal Messages</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p><strong>Cmdr Backflaps</strong> (also known as Kal/Kalearne) presents a useful guide to <strong>analysing octal messages</strong> from the <strong>Unknown Link</strong>. This is the method used for locating additional <strong>Unknown Sites</strong>, but is also relevant to analysing <strong>Unknown Probe</strong> messages.</p>
+<p><iframe title="Elite: Dangerous - A guide to analysing octal messages" width="640" height="360" src="https://www.youtube.com/embed/XRZ7G90IkxM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>Cmdr <strong>Redden Alt Mer</strong> then gives details on how to <strong>translate</strong> the transcribed audio into a set of distances from <strong>Merope</strong> that then lets you identify the final location:</p>
+<pre id="code" class="brush: text; plain-text">The signal received from the UL can be translated to binary, considering high
+tones as 0s and low tones as 1s. Using message #1 in our current example, this:
+hhl hlh hll / lll llh lhh
+lll / lll llh lhh
+hll lhh lhl / hll lll hlh
+
+becomes this:
+001 010 011 / 111 110 100
+111 / 111 110 100
+011 100 101 / 011 111 010
+
+Once we have the binary, each couple represent two operands, a dividend and a
+divisor. To pass from this binary representation to the actual numbers, we
+need to first translate each octet (e.g., 001) into a single digit:
+001 -&gt; 1
+010 -&gt; 2
+011 -&gt; 3
+...
+
+Doing so for the first set of operands, for example, will give us the following:
+123 / 764
+
+From our previous studies on the UP signal, and from observation (all the
+digits are always in the [0-7] range), we can assume that this must be
+interpreted as octal numbers (which are normally represented with a prefix 0 to
+distinguish them from decimal numbers). Converting them to decimal, will give
+us:
+83 / 500
+
+All that's left to do is to apply the division to all of the three and get
+a measure of the distance, respectively from Merope, the system where the
+message was collected, and Col 70 Sector FY-N c21-3, expressed in ThargMeters
+(THm), i.e., the distance between Merope and Col 70 Sector FY-N c21-3, roughly
+871.02Ly.
+
+Applying the steps above to message #1 of our current example, we get:
+0123/0764 -&gt; 83/500 = 0.1660THm -&gt; 144.5883Ly
+07/0764 -&gt; 7/500 = 0.0140THm -&gt; 12.1942Ly
+0345/0372 -&gt; 229/250 = 0.9160THm -&gt; 797.8487Ly
+
+These three distances will allow us to trilaterate the next system pointed by this message.</pre>
+<p>Note that translating each binary triplet singularly to octal and then to decimal is optional. By directly merging each distinct set of binary triplets in a single binary number and then translating it to decimal will yield the same result. Applying it to the example above 001 010 011 ->  001010011 -> 83</p>The post <a href="https://canonn.science/media/cmdr-backflaps-a-guide-to-analysing-octal-messages/">Cmdr Backflaps – A Guide to Analysing Octal Messages</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

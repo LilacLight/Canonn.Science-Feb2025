@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Octal | Canonn Research Group</title>
+	<atom:link href="https://canonn.science/tag/octal/feed/" rel="self" type="application/rss+xml" />
+	<link>https://canonn.science</link>
+	<description>Bask in our science!</description>
+	<lastBuildDate>Sun, 18 Mar 2018 20:44:23 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.16</generator>
+
+<image>
+	<url>https://canonn.science/wp-content/uploads/2017/04/cropped-biscuit-32x32.png</url>
+	<title>Octal | Canonn Research Group</title>
+	<link>https://canonn.science</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Cmdr Backflaps &#8211; A Guide to Analysing Octal Messages</title>
+		<link>https://canonn.science/media/cmdr-backflaps-a-guide-to-analysing-octal-messages/</link>
+		
+		<dc:creator><![CDATA[Canonn Research]]></dc:creator>
+		<pubDate>Wed, 05 Jul 2017 14:16:17 +0000</pubDate>
+				<category><![CDATA[Media]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[Octal]]></category>
+		<category><![CDATA[Unknown Link]]></category>
+		<category><![CDATA[Unknown Probe]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=2726</guid>
+
+					<description><![CDATA[<p>Cmdr Backflaps (also known as Kal/Kalearne) presents a useful guide to analysing octal messages from the Unknown Link. This is the method used for locating additional Unknown Sites, but is also relevant to analysing Unknown Probe messages. Cmdr Redden Alt Mer then gives details on how to translate the transcribed audio into a set of distances...</p>
+The post <a href="https://canonn.science/media/cmdr-backflaps-a-guide-to-analysing-octal-messages/">Cmdr Backflaps – A Guide to Analysing Octal Messages</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p><strong>Cmdr Backflaps</strong> (also known as Kal/Kalearne) presents a useful guide to <strong>analysing octal messages</strong> from the <strong>Unknown Link</strong>. This is the method used for locating additional <strong>Unknown Sites</strong>, but is also relevant to analysing <strong>Unknown Probe</strong> messages.</p>
+<p><iframe title="Elite: Dangerous - A guide to analysing octal messages" width="640" height="360" src="https://www.youtube.com/embed/XRZ7G90IkxM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>Cmdr <strong>Redden Alt Mer</strong> then gives details on how to <strong>translate</strong> the transcribed audio into a set of distances from <strong>Merope</strong> that then lets you identify the final location:</p>
+<pre id="code" class="brush: text; plain-text">The signal received from the UL can be translated to binary, considering high
+tones as 0s and low tones as 1s. Using message #1 in our current example, this:
+hhl hlh hll / lll llh lhh
+lll / lll llh lhh
+hll lhh lhl / hll lll hlh
+
+becomes this:
+001 010 011 / 111 110 100
+111 / 111 110 100
+011 100 101 / 011 111 010
+
+Once we have the binary, each couple represent two operands, a dividend and a
+divisor. To pass from this binary representation to the actual numbers, we
+need to first translate each octet (e.g., 001) into a single digit:
+001 -&gt; 1
+010 -&gt; 2
+011 -&gt; 3
+...
+
+Doing so for the first set of operands, for example, will give us the following:
+123 / 764
+
+From our previous studies on the UP signal, and from observation (all the
+digits are always in the [0-7] range), we can assume that this must be
+interpreted as octal numbers (which are normally represented with a prefix 0 to
+distinguish them from decimal numbers). Converting them to decimal, will give
+us:
+83 / 500
+
+All that's left to do is to apply the division to all of the three and get
+a measure of the distance, respectively from Merope, the system where the
+message was collected, and Col 70 Sector FY-N c21-3, expressed in ThargMeters
+(THm), i.e., the distance between Merope and Col 70 Sector FY-N c21-3, roughly
+871.02Ly.
+
+Applying the steps above to message #1 of our current example, we get:
+0123/0764 -&gt; 83/500 = 0.1660THm -&gt; 144.5883Ly
+07/0764 -&gt; 7/500 = 0.0140THm -&gt; 12.1942Ly
+0345/0372 -&gt; 229/250 = 0.9160THm -&gt; 797.8487Ly
+
+These three distances will allow us to trilaterate the next system pointed by this message.</pre>
+<p>Note that translating each binary triplet singularly to octal and then to decimal is optional. By directly merging each distinct set of binary triplets in a single binary number and then translating it to decimal will yield the same result. Applying it to the example above 001 010 011 ->  001010011 -> 83</p>The post <a href="https://canonn.science/media/cmdr-backflaps-a-guide-to-analysing-octal-messages/">Cmdr Backflaps – A Guide to Analysing Octal Messages</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

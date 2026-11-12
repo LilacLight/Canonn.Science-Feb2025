@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Canonn | Canonn Research Group</title>
+	<atom:link href="https://canonn.science/tag/canonn/feed/" rel="self" type="application/rss+xml" />
+	<link>https://canonn.science</link>
+	<description>Bask in our science!</description>
+	<lastBuildDate>Sat, 28 Dec 2024 00:46:11 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.16</generator>
+
+<image>
+	<url>https://canonn.science/wp-content/uploads/2017/04/cropped-biscuit-32x32.png</url>
+	<title>Canonn | Canonn Research Group</title>
+	<link>https://canonn.science</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>The Gnosis</title>
+		<link>https://canonn.science/codex/the-gnosis/</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Wed, 31 May 2017 22:26:00 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Canonn]]></category>
+		<category><![CDATA[Carrier]]></category>
+		<category><![CDATA[Civilian Cruiser]]></category>
+		<category><![CDATA[Community Goal]]></category>
+		<category><![CDATA[Flight Operations]]></category>
+		<category><![CDATA[Flight Operations Plan]]></category>
+		<category><![CDATA[Gnosis]]></category>
+		<category><![CDATA[Megaship]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=1327</guid>
+
+					<description><![CDATA[<p>The ship was constructed by an appeal to the wider community, and provides docking, repair, outfitting, and market services to all. It originally moved on a weekly schedule decided by the membership and council to conduct science throughout the galaxy, but in September 3306 the megaship retired from active science duty to instead carry out...</p>
+The post <a href="https://canonn.science/codex/the-gnosis/">The Gnosis</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>The ship was constructed by an appeal to the wider community, and provides docking, repair, outfitting, and market services to all. It originally moved on a weekly schedule decided by the membership and council to conduct science throughout the galaxy, but in September 3306 the megaship retired from active science duty to instead carry out a set itinerary, which you can find below.</p>
+<p>The current location is tracked by tools such as EDSM and EDDB &#8211; with <strong>the current</strong> location shown below courtesy of EDSM.</p>
+<blockquote class="edsm-embed" data-value="station::42167" lang="en_GB">
+<p><a href="https://www.edsm.net/" target="_blank" rel="noopener noreferrer">EDSM &#8211; Elite Dangerous Star Map</a>/blockquote&gt;<br><script async="" src="https://www.edsm.net/js/embed.js" charset="utf-8"></script></p>
+<p>Ships docked with the Gnosis are taken with it when it jumps.</p>
+</blockquote>
+
+
+<h4>Itinerary:</h4>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.28.5/date_fns.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <table>
+        <tbody><tr>
+            <th>System</th>
+            <th>Arrival</th>
+            <th>Departure</th>
+        </tr>
+        <tr class="rows">
+
+
+    <script>
+
+    var startDate = dateFns.startOfDay(Date.UTC(2020, 8, 10, 0, 0, 0));
+
+        var dates = {
+            "Varati": dateFns.addWeeks(startDate, 0),
+            "HIP 17862": dateFns.addWeeks(startDate, 1),
+            "Pleiades Sector PN-T b3-0": dateFns.addWeeks(startDate, 2),
+            "Synuefe PR-L b40-1": dateFns.addWeeks(startDate, 3),
+            "HIP 18120": dateFns.addWeeks(startDate, 4),
+            "IC 2391 Sector CQ-Y c16": dateFns.addWeeks(startDate, 5),
+            "Kappa-1 Volantis": dateFns.addWeeks(startDate, 6),
+            "Epsilon Indi": dateFns.addWeeks(startDate, 7)
+        }
+
+        function get_date(system) {
+        
+            console.log("startDate: " + startDate)
+
+            var d = dates[system]
+
+            const dayINeed = 4; // for Thursday
+
+
+            const today = dateFns.startOfDay(new Date())
+
+
+            //const today = dateFns.startOfDay(new Date())
+            //console.log("today: " + dateFns.format(today, 'MMMM DD, YYYY'))
+            const todayDay = dateFns.getISODay(today);
+
+
+            var currentjump = dateFns.setISODay(today, dayINeed)
+            // if we haven't yet passed the day of the week that I need:
+            if (todayDay <= dayINeed) {
+                // then just give me this week's instance of that day
+                currentjump = dateFns.setISODay(dateFns.subWeeks(today, 1), dayINeed);
+            }
+
+            var weekstoadd = dateFns.differenceInWeeks(d, currentjump) % 8;
+            if (weekstoadd < 0) {
+                weekstoadd = 8 + weekstoadd
+            }
+            var newdate = dateFns.addWeeks(currentjump, weekstoadd)
+            begindate = dateFns.startOfDay(Date.UTC(dateFns.getYear(newdate) + 1286, dateFns.getMonth(newdate), dateFns.getDate(newdate), 0, 0, 0));
+            var enddate = dateFns.addWeeks(begindate, 1)
+            //return newdate.format('YYYY-MM-DD')
+
+            retval = dateFns.format(newdate, 'MMMM DD, YYYY') + ' - ' + dateFns.format(enddate, 'MMMM DD, YYYY')
+            currentLocation = (dateFns.differenceInDays(newdate, currentjump) == 0)
+
+            return { startdate: begindate, enddate: enddate, currentLocation: currentLocation }
+        }
+
+        function sortByKey(array, key) {
+            return array.sort(function (a, b) {
+                var x = a[key]; var y = b[key];
+                return (dateFns.differenceInDays(x, y) < 0 ? -1 : (dateFns.differenceInDays(x, y) > 0 ? 1 : 0));
+            });
+        }
+
+        function get_full_schedule() {
+            var retval = []
+            Object.keys(dates).forEach(function (key) {
+                d = get_date(key)
+                item = { "name": key, startdate: dateFns.format(d.startdate, 'MMMM DD, YYYY'), enddate: dateFns.format(d.enddate, 'MMMM DD, YYYY'), currentLocation: d.currentLocation }
+                console.log(item)
+                retval.push(item)
+            });
+
+            return sortByKey(retval, "startdate")
+        };
+
+        $(document).ready(function () {
+
+        var itinary = get_full_schedule()
+            rows = ""
+            itinary.forEach(function (system) {
+                rows = rows + '<tr><td>' + system.name + '</td><td>' + system.startdate + '</td><td>' + system.enddate + '</td></tr>\n'
+            })
+            $('.rows').replaceWith(rows);
+            
+        });            
+
+    </script>
+
+        </tr>
+    </tbody></table>
+
+
+
+<p></p>The post <a href="https://canonn.science/codex/the-gnosis/">The Gnosis</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Canonn Institute</title>
+		<link>https://canonn.science/codex/canonn-institute/</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Wed, 31 May 2017 21:00:00 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Canonn]]></category>
+		<category><![CDATA[Community Goal]]></category>
+		<category><![CDATA[Scientific Outpost]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=1921</guid>
+
+					<description><![CDATA[<p>Constructed in 3302 in orbit of Col 285 Sector IX-T d3-43 A 1, the Canonn Institute is a state-of-the-art Scientific Outpost dedicated to support the Canonn Intersteller Research Group’s research into the Unknown Artefacts, Unknown Probes, Unknown Ships, and other mysteries of the galaxy. The materials and resources required for the construction were raised through...</p>
+The post <a href="https://canonn.science/codex/canonn-institute/">Canonn Institute</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>Constructed in 3302 in orbit of Col 285 Sector IX-T d3-43 A 1, the Canonn Institute is a state-of-the-art Scientific Outpost dedicated to support the Canonn Intersteller Research Group’s research into the Unknown Artefacts, Unknown Probes, Unknown Ships, and other mysteries of the galaxy.</p>
+<p>The materials and resources required for the construction were raised through an appeal to the larger galactic community.</p>The post <a href="https://canonn.science/codex/canonn-institute/">Canonn Institute</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Thompson Dock</title>
+		<link>https://canonn.science/codex/thompson-dock/</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Wed, 31 May 2017 20:59:00 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Canonn]]></category>
+		<category><![CDATA[Coriolis]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=1924</guid>
+
+					<description><![CDATA[<p>In orbit of Varati A 6 (aka &#8220;Eureka&#8221;), Thompson Dock is the center of science in the galaxy, and the home station of the Canonn Interstellar Research Group.</p>
+The post <a href="https://canonn.science/codex/thompson-dock/">Thompson Dock</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>In orbit of Varati A 6 (aka &#8220;Eureka&#8221;), Thompson Dock is the center of science in the galaxy, and the home station of the Canonn Interstellar Research Group.</p>The post <a href="https://canonn.science/codex/thompson-dock/">Thompson Dock</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

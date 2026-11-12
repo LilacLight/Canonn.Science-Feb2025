@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Thargoid Interceptor | Canonn Research Group</title>
+	<atom:link href="https://canonn.science/tag/thargoid-interceptor/feed/" rel="self" type="application/rss+xml" />
+	<link>https://canonn.science</link>
+	<description>Bask in our science!</description>
+	<lastBuildDate>Wed, 18 Sep 2024 19:17:14 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.16</generator>
+
+<image>
+	<url>https://canonn.science/wp-content/uploads/2017/04/cropped-biscuit-32x32.png</url>
+	<title>Thargoid Interceptor | Canonn Research Group</title>
+	<link>https://canonn.science</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Thargoid Interceptor Shield Analysis</title>
+		<link>https://canonn.science/codex/thargoid-interceptor-shield-analysis/</link>
+		
+		<dc:creator><![CDATA[Maligno]]></dc:creator>
+		<pubDate>Fri, 19 Apr 2019 23:58:27 +0000</pubDate>
+				<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Lab 69 XIA]]></category>
+		<category><![CDATA[Research Notes]]></category>
+		<category><![CDATA[AX]]></category>
+		<category><![CDATA[Combat]]></category>
+		<category><![CDATA[Equipment]]></category>
+		<category><![CDATA[Research]]></category>
+		<category><![CDATA[Thargoid Interceptor]]></category>
+		<category><![CDATA[Thargoids]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=6725</guid>
+
+					<description><![CDATA[<p>1. Introduction The subject of this article is the accurate estimation of Thargoid Interceptor shield strength.  An initial analysis was carried out to estimate these values and is referenced here in its entirety [1].  Given the success of the mathematical techniques used to accurately estimate the damage partitioning in human weapons such as Plasma Accelerators...</p>
+The post <a href="https://canonn.science/codex/thargoid-interceptor-shield-analysis/">Thargoid Interceptor Shield Analysis</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<h2>1. Introduction</h2>
+<p>The subject of this article is the accurate estimation of Thargoid Interceptor shield strength.  An initial analysis was carried out to estimate these values and is referenced here in its entirety [1].  Given the success of the mathematical techniques used to accurately estimate the damage partitioning in human weapons such as Plasma Accelerators and Railguns [2], we decided to use similar techniques to get more accurate and mathematically robust shield strength estimates.</p>
+<h2>2. Executive Summary</h2>
+<p>By employing a model of Interceptor shield decay and human weapon damage, the shield strength of all four Interceptor variants was measured.  The table below shows the starting shield strength of each Interceptor.</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-6737" src="https://canonn.science/wp-content/uploads/2019/04/WW_01_Summary_Table_edited.png" alt="" width="755" height="206" srcset="https://canonn.science/wp-content/uploads/2019/04/WW_01_Summary_Table_edited.png 755w, https://canonn.science/wp-content/uploads/2019/04/WW_01_Summary_Table_edited-300x82.png 300w, https://canonn.science/wp-content/uploads/2019/04/WW_01_Summary_Table_edited-600x164.png 600w" sizes="(max-width: 755px) 100vw, 755px" /></p>
+<p>In addition to the shield strength estimates, we were able to use linear algebra to verify that indeed Thargoid Interceptors share the same resistances and vulnerabilities as unengineered human shield generators.  The magnitude of each damage component in a given weapon was scaled according to the standard resistance of 50%, 40%, and -20% for explosive, kinetic, and thermal damage, respectively.</p>
+<p>Additionally, the following set observations were made:</p>
+<ul>
+<li>As expected based on standard resistances, thermal damage is the most effective against Interceptor shields.  Laser beams and weapons with the incendiary experimental effect are most effective.</li>
+<li>Explosive damage is the weakest of all four types.  Additionally, the Interceptor shield has a 30% chance of deflecting incoming missiles without incurring any damage.</li>
+<li>It was found that the DPS values for turreted and gimballed C3 beam weapons are 3% higher than those quoted in the outfitting UI, which is a phenomenon we will investigate in more detail in a future analysis.</li>
+</ul>
+<h2>3. Theory</h2>
+<p>The cornerstone of this analysis is that Interceptor shields exhibit a linear shield decay rate.  The shield strength of an Interceptor will decay from 100% to 90% at the same rate that it does from 10% to 0%.  When left unperturbed, the shield strength of a given Interceptor variant will decay from 100% to 0% in a fixed period of time T_0.  Now, when damage is inflicted on the shield by a weapon, the shield will reach a 0% sooner, at a time T_1. This can be easily visualized by considering the unperturbed case and the scenario where the shield is continuously damaged by a beam weapon, as shown in the figure below.</p>
+<p><img class="wp-image-6727 aligncenter" src="https://canonn.science/wp-content/uploads/2019/04/WW_02_Decay_Graph-1024x687.png" alt="" width="820" height="550" srcset="https://canonn.science/wp-content/uploads/2019/04/WW_02_Decay_Graph-1024x687.png 1024w, https://canonn.science/wp-content/uploads/2019/04/WW_02_Decay_Graph-300x201.png 300w, https://canonn.science/wp-content/uploads/2019/04/WW_02_Decay_Graph-600x403.png 600w, https://canonn.science/wp-content/uploads/2019/04/WW_02_Decay_Graph-768x515.png 768w, https://canonn.science/wp-content/uploads/2019/04/WW_02_Decay_Graph.png 1234w" sizes="(max-width: 820px) 100vw, 820px" /></p>
+<p>The essence of the argument is that we know how much damage was dealt to the shield, and we know what fraction of the shield was supposed to be left at time T_1.  Based on those two pieces of information&#8212;the damage dealt by the weapon and the baseline fractional shield at a given moment&#8212;we can infer the initial shield strength of the Interceptor shield.  The formal equations for estimating the shield strength are given below.</p>
+<p><img class="wp-image-6728 aligncenter" src="https://canonn.science/wp-content/uploads/2019/04/WW_03_Damage_Model-1024x552.png" alt="" width="807" height="435" srcset="https://canonn.science/wp-content/uploads/2019/04/WW_03_Damage_Model-1024x552.png 1024w, https://canonn.science/wp-content/uploads/2019/04/WW_03_Damage_Model-300x162.png 300w, https://canonn.science/wp-content/uploads/2019/04/WW_03_Damage_Model-600x324.png 600w, https://canonn.science/wp-content/uploads/2019/04/WW_03_Damage_Model-768x414.png 768w, https://canonn.science/wp-content/uploads/2019/04/WW_03_Damage_Model.png 1190w" sizes="(max-width: 807px) 100vw, 807px" /></p>
+<p>The damage partition values for Railguns and Plasma Accelerators were taken from a detailed mathematical analysis carried out on the subject [2].</p>
+<p>Now, where the current shield strength analysis differs from the first one performed [1] is the use of linear algebra to simultaneously determine the Interceptor’s shield strength and its kinetic and thermal resistances.  In the previous analysis the Interceptor’s shield resistances were hypothesized to be the same as those of unengineered human ships, and the mutual consistency of results across various weapons was used to build confidence in that hypothesis.  Here, we set up a system of equations and solve for the shield strength, thermal resistance, and kinetic resistance. Since explosive resistance was already fairly well determined to be 50% in the previous shield strength analysis [1], we will not treat it in this study.</p>
+<p>The system of equations below relate the damage from Railguns, Plasma Accelerators, and a combination of Fragmentation Cannons and Beam Lasers to the Cyclops shield strength.</p>
+<p><img class=" wp-image-6730 aligncenter" src="https://canonn.science/wp-content/uploads/2019/04/WW_04_System_of_Equations-1024x253.png" alt="" width="882" height="218" srcset="https://canonn.science/wp-content/uploads/2019/04/WW_04_System_of_Equations-1024x253.png 1024w, https://canonn.science/wp-content/uploads/2019/04/WW_04_System_of_Equations-300x74.png 300w, https://canonn.science/wp-content/uploads/2019/04/WW_04_System_of_Equations-600x149.png 600w, https://canonn.science/wp-content/uploads/2019/04/WW_04_System_of_Equations-768x190.png 768w, https://canonn.science/wp-content/uploads/2019/04/WW_04_System_of_Equations.png 1220w" sizes="(max-width: 882px) 100vw, 882px" /></p>
+<p>The first equation corresponds to Railguns, the second to Plasma Accelerators, and the third to a tandem use of Fragmentation Cannons and Beam Lasers; the latter combination was used instead of an Incendiary Multi-cannon because the kinetic fraction of the damage, 10%, is too low for accurate measurements.</p>
+<p>The solution of the system of equations for the thermal and kinetic resistances is given below, and, of course, the shield strength is given by any of the three equations above.</p>
+<p><img class=" wp-image-6731 aligncenter" src="https://canonn.science/wp-content/uploads/2019/04/WW_05_Solutions.png" alt="" width="625" height="267" srcset="https://canonn.science/wp-content/uploads/2019/04/WW_05_Solutions.png 840w, https://canonn.science/wp-content/uploads/2019/04/WW_05_Solutions-300x128.png 300w, https://canonn.science/wp-content/uploads/2019/04/WW_05_Solutions-600x256.png 600w, https://canonn.science/wp-content/uploads/2019/04/WW_05_Solutions-768x328.png 768w" sizes="(max-width: 625px) 100vw, 625px" /></p>
+<p>where,</p>
+<p><img class=" wp-image-6732 aligncenter" src="https://canonn.science/wp-content/uploads/2019/04/WW_06_Solution_Parameters.png" alt="" width="505" height="778" srcset="https://canonn.science/wp-content/uploads/2019/04/WW_06_Solution_Parameters.png 628w, https://canonn.science/wp-content/uploads/2019/04/WW_06_Solution_Parameters-195x300.png 195w, https://canonn.science/wp-content/uploads/2019/04/WW_06_Solution_Parameters-600x925.png 600w" sizes="(max-width: 505px) 100vw, 505px" /></p>
+<p>Most of the parameters in the equations above are known, such as damage per shot.  The parameters that need to be measured in the field are number of shots fired (in the case of beam weapons, time on target) and the corresponding fractional shield loss.</p>
+<h2>4. Experimental Methodology</h2>
+<p>To start experiments were conducted on the Cyclops Interceptor variant because of its regular cruise speed and ease of engagement.  The relative weakness of the Cyclops “panic” shield made it easier to acquire data with a variety of weapons and to exactly understand how each of them deals damage.</p>
+<p>A baseline characterization of each Interceptor variant shield was first established.  This consisted of simply noting the duration of shield and the corresponding percentage decay rate.  After a heart is destroyed, the Interceptor enters a brief “staggered” stage where it puts up its shield.  There are a number of steps it takes to put the shield online, as illustrated below.</p>
+<p><img class="alignnone size-large wp-image-6729" src="https://canonn.science/wp-content/uploads/2019/04/Shield_Boot_Sequence-1024x325.png" alt="" width="1024" height="325" srcset="https://canonn.science/wp-content/uploads/2019/04/Shield_Boot_Sequence-1024x325.png 1024w, https://canonn.science/wp-content/uploads/2019/04/Shield_Boot_Sequence-300x95.png 300w, https://canonn.science/wp-content/uploads/2019/04/Shield_Boot_Sequence-600x191.png 600w, https://canonn.science/wp-content/uploads/2019/04/Shield_Boot_Sequence-768x244.png 768w, https://canonn.science/wp-content/uploads/2019/04/Shield_Boot_Sequence.png 1803w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>The timestamp of the moment when the shield comes online is recorded.  Then we patiently wait until the shield decays to 0%. Then later the timestamp of the moment when the shield reaches 0% is recorded.  The time difference between those two timestamps becomes the baseline shield duration.</p>
+<p>After the baseline for each shield was established, data acquisition experiments consisted of dealing persistent damage to the Interceptor’s shield and carefully taking note of the amount of damage dealt and the exact time differential between the moment the shield came online and eventually taken offline.  A video recording was made of each data acquisition run and the relevant parameters were extracted by analyzing the video on a frame-by-frame basis.</p>
+<p>The following weapon configurations were tested against the Cyclops shield:</p>
+<ol>
+<li>2 C3 Plasma Accelerator engineered for Efficiency each with a separate exp. effect</li>
+<li>2 C1 Railguns engineered for Long Range (each has superpen, not relevant here)</li>
+<li>2 C3 Pacifier Fragmentation Cannons with Overcharged shots and Screening shell experimental effect, plus 1 Turreted Beam Laser engineered for Long Range and with Thermal Vent</li>
+<li>2 C3 Pacifier Fragmentation Cannons with Overcharged shots and Screening shell experimental effect</li>
+<li>2 C2 Railguns engineered for Long Range (each has superpen, not relevant here)</li>
+<li>2 Turreted Beam Lasers engineered for Long Range and with Thermal Vent</li>
+<li>1 Gimballed Beam Laser engineered for Long Range and with Thermal Vent.</li>
+</ol>
+<p>Only the first three set of weapons served as inputs to the damage equations enumerated in the previous section.  The last four were used to ensure general consistency of results.</p>
+<p>A Faulcon DeLacy Krait MkII was used in these experiments because it has a favorable hardpoint configuration that can carry the weapons listed above.</p>
+<h2>5. Results</h2>
+<p>The results of a multitude of experimental trials with various weapon configurations is tabulated below.  The relevant parameters for each trial is listed, as well as a preliminary measurement of the Cyclops shield strength, which assumes unengineered human shield generator resistances.</p>
+<p><img class="size-full wp-image-6734 aligncenter" src="https://canonn.science/wp-content/uploads/2019/04/WW_07_Experimental_Trials.png" alt="" width="856" height="743" srcset="https://canonn.science/wp-content/uploads/2019/04/WW_07_Experimental_Trials.png 856w, https://canonn.science/wp-content/uploads/2019/04/WW_07_Experimental_Trials-300x260.png 300w, https://canonn.science/wp-content/uploads/2019/04/WW_07_Experimental_Trials-600x521.png 600w, https://canonn.science/wp-content/uploads/2019/04/WW_07_Experimental_Trials-768x667.png 768w" sizes="(max-width: 856px) 100vw, 856px" /></p>
+<p>It should be noted that the assumed damage output for C3 Beam Lasers had to be revised slightly, with both kinds of C3 Beam Lasers having 3% more damage than listed in the outfitting UI.  These damage values will be tested more carefully in a future study. We are confident that our assumed values are more accurate than those listed in the outfitting UI, which are known to be inaccurate [3].</p>
+<p>The average of all preliminary measurements is around 2435 MJ with a standard deviation of 42 MJ.  It was found the results from Railguns tended to be the most consistent across trials. Surprisingly, Beam Laser estimates tend to have the highest level of variation, which might be due to the effects of beam jitter.</p>
+<p>The experimental trials highlighted in blue were chosen to serve as inputs to the system of equation solutions because they are mutually consistent, thus minimizing experimental noise.  The solutions were computed assuming various combinations of the highlighted experimental inputs. For instance, the first trial of Plasma Accelerators results were combined with the corresponding first trials of Railguns and Pacifier &amp; Beam trials, then later other combinations were applied.  The solutions for a number of combinations are tabulated below.</p>
+<p><img class=" wp-image-6733 aligncenter" src="https://canonn.science/wp-content/uploads/2019/04/WW_07_Analytical_Results.png" alt="" width="623" height="233" srcset="https://canonn.science/wp-content/uploads/2019/04/WW_07_Analytical_Results.png 891w, https://canonn.science/wp-content/uploads/2019/04/WW_07_Analytical_Results-300x112.png 300w, https://canonn.science/wp-content/uploads/2019/04/WW_07_Analytical_Results-600x224.png 600w, https://canonn.science/wp-content/uploads/2019/04/WW_07_Analytical_Results-768x287.png 768w" sizes="(max-width: 623px) 100vw, 623px" /></p>
+<p>The shield estimates and resistances are consistent for the different combination of input parameters.  The average results clearly point to -20% thermal resistance, 40% kinetic resistance, and a Cyclops shield strength of 2450 MJ.  These results confirm without a doubt that Thargoid Interceptors share the same shield resistances as human shielding technology.  Given that the Cyclops shield duration is 97.93 seconds, the absolute shield decay rate is 25.02 MJ/s.</p>
+<p>As noted in the theory section, the previous analysis [1] already determined the resistance to explosive damage (50%) with a good degree of confidence.</p>
+<p>Now, in the previous shield estimate analysis it was experimentally found that the shield strength of more powerful Interceptor variants was progressively higher than that of the Cyclops.  More importantly, it was found that the absolute shield decay rate was the same for all Interceptor variants. Given the consistency of the Cyclops shield estimates in this analysis and the previous one, we can safely estimate the shield strength of higher Interceptor variants via extrapolation, that is, by simply using the product of the absolute shield decay of 25.02 MJ/s with the measured shield durations enumerated in Section 4.</p>
+<p>The shield strength estimates for all Interceptor variants is tabulated below.  The Hydra has an incredibly high initial shield strength of 8000 MJ, which is why it takes over 5 minutes for it to fully decay.  It should be noted that, with the exception of the Cyclops Interceptor, the values listed in the table below were rounded to the nearest multiple of 50 MJ to reflect errors in the measured input parameters to the analytical solutions.</p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-6737" src="https://canonn.science/wp-content/uploads/2019/04/WW_01_Summary_Table_edited.png" alt="" width="755" height="206" srcset="https://canonn.science/wp-content/uploads/2019/04/WW_01_Summary_Table_edited.png 755w, https://canonn.science/wp-content/uploads/2019/04/WW_01_Summary_Table_edited-300x82.png 300w, https://canonn.science/wp-content/uploads/2019/04/WW_01_Summary_Table_edited-600x164.png 600w" sizes="(max-width: 755px) 100vw, 755px" /></p>
+<h2>6. Summary and Outlook</h2>
+<p>The initial shield strength of each Interceptor variant has been measured.  A linear decay model and robust linear algebra techniques were employed to obtain accurate shield strength estimates for all Thargoid Interceptor variants.  All Interceptor variants have a shield that exhibits the same set of resistances as unengineered human shield generators. Other notable observations about the weapons employed in this analysis were made, as indicated in the Executive Summary.</p>
+<p>Future studies will study the Interceptor shield strength in engagements scenarios involving multiple pilots.  Additionally, the effect of Guardian weaponry on the shield will be studied.</p>
+<h4>7. References</h4>
+[1] CMDR Maligno, “Interceptor Shield Strength Study”, <a href="https://forums.frontier.co.uk/threads/alien-archaeology-and-other-mysteries-breaking-news-theories-and-tinfoil-hattery.380504/page-149#post-7717042">https://forums.frontier.co.uk/threads/alien-archaeology-and-other-mysteries-breaking-news-theories-and-tinfoil-hattery.380504/page-149#post-7717042</a><br />[2] CMDR Maligno, “Weapon Damage Partition Analysis”, <a href="https://canonn.science/codex/weapon-damage-partition-analysis/">https://canonn.science/codex/weapon-damage-partition-analysis/<br /></a>[3] CMDR 100.Rub, “The Information Problem”, <a href="https://forums.frontier.co.uk/threads/the-information-problem.448887/">https://forums.frontier.co.uk/threads/the-information-problem.448887/</a></p>
+
+
+<p></p>The post <a href="https://canonn.science/codex/thargoid-interceptor-shield-analysis/">Thargoid Interceptor Shield Analysis</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Thargoid Interceptor responses to limpets</title>
+		<link>https://canonn.science/codex/thargoid-interceptor-responses-to-limpets/</link>
+		
+		<dc:creator><![CDATA[factabulous]]></dc:creator>
+		<pubDate>Fri, 18 May 2018 18:16:56 +0000</pubDate>
+				<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Xeno-Technology]]></category>
+		<category><![CDATA[Thargoid Interceptor]]></category>
+		<category><![CDATA[Thargoids]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=5898</guid>
+
+					<description><![CDATA[<p>The following was submitted by CMDR OakPanda to aid us in our further investigation of the Thargoids. He investigated the effects of all known limpet types upon Thargoid Interceptors, in the name of science! From CMDR OakPanda: All results were gathered on a ship with no weapons on the hard points and no cargo other...</p>
+The post <a href="https://canonn.science/codex/thargoid-interceptor-responses-to-limpets/">Thargoid Interceptor responses to limpets</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>The following was submitted by CMDR OakPanda to aid us in our further investigation of the Thargoids. He investigated the effects of all known limpet types upon Thargoid Interceptors, in the name of science!</p>
+<p>From CMDR OakPanda:</p>
+<blockquote><p>All results were gathered on a ship with no weapons on the hard points and no cargo other than limpets. I have never killed a Thargoid in the past. All results were obtained via non-hostile targets, varying from Cyclops, Basilisk and yes Medusa too.</p>
+<p>Results in alphabetical order:</p>
+<p>Decontamination: This one surprised me the most, I expected to get invalid target or the Thargoid to go hostile but it acted just as it would with a human, tracking to the target and locking on. It did the repairing thing and then said it was complete and detached. No change in hostility and the Thargoid left unhindered.</p>
+<p>Fuel: This worked, once the Thargoid was targeted and I launched it the limpet tracked the Thargoid, docked to it like it would a ship and then said it was fueling and fueling complete then detached. No change in hostility by the Thargoid, and it left unhindered. It seemed to ignore the interaction for the most part.</p>
+<p>Hatch Breaker: This was highly surprising! It acted normally, went to the target, latched on, and started to &#8216;break&#8217; the &#8216;hatch&#8217;. Once it latched on the Thargoid instantly went red (hostile) but the limpet continued and then gave a message that the &#8220;Syphon Resource Failed&#8221;. I was able to flee once but once I was killed after doing this. But this was the only time I died doing this research. I was so shocked by the first result I didn&#8217;t react fast enough to flee. It makes me wonder if some Thargoids ARE able to be the target of a Hatch Breaker limpet with actual results as if this is the message for no cargo or if this is an auto failure on all Thargoids, or if the game just didn&#8217;t know how to process it and the default Thargoid ships lack a &#8216;cargo&#8217; field. But all in all this is one of the more interesting results.</p>
+<p>Prospector: My testing showed this limpet seems to phase through any invalid target for the most part and this was the case here. It passed through the body of the Thargoid without any interaction. I tested this repeatedly in several encounters and at no time did it appear to have any interaction with the Thargoid. I would note this is the same effect you get when used against a player ship as well.</p>
+<p>Recon: Simple invalid target reply on this one, so wouldn&#8217;t even fire in the first place.</p>
+<p>Repair: Just like Decon this limpet would fire, track, latch on and then say it was repairing then repairs complete and detach. Again surprised me. But considering the Decon results I suppose it shouldn&#8217;t have.</p>
+<p>Research: I did this one just to give the basic full board of results. Of course the Thargoid instantly went hostile when the limpet hit. We already know the purpose/results of this one as it was designed to be used against Thargoids in the first place but I wanted to be consistent. I hadn&#8217;t used this one before so was a bit surprised that just having this on me when scanned did not give hostile reactions.</p>
+<p>In each case I entered the area, let the Thargoid scan me, scanned it back, and THEN used the limpets.</p>
+<p>I did try using the Hatch Breaker limpet in silent running mode which did make it go hostile when hit but it couldn&#8217;t find me until I turned that off to flee. So that was an interesting side note.</p>
+<p>Finally just a tad more info which probably is more widely known: Manifest scanner failed completely. D-Link doesn&#8217;t work either.</p></blockquote>The post <a href="https://canonn.science/codex/thargoid-interceptor-responses-to-limpets/">Thargoid Interceptor responses to limpets</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Demeter Class Agricultural Vessel KSL-878</title>
+		<link>https://canonn.science/codex/demeter-class-agricultural-vessel-ksl-878/</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Tue, 10 Oct 2017 05:03:03 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Demeter-class]]></category>
+		<category><![CDATA[Megaship]]></category>
+		<category><![CDATA[Thargoid Attack]]></category>
+		<category><![CDATA[Thargoid Interceptor]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=3869</guid>
+
+					<description><![CDATA[<p>The Demeter Class Agricultural Vessel designation KSL-878 was last reported in orbit of the planet Pleiades Sector HR-W d1-57 A 5. The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas&#160;throughout the area. A Ship Log Uplink point can be located on...</p>
+The post <a href="https://canonn.science/codex/demeter-class-agricultural-vessel-ksl-878/">Demeter Class Agricultural Vessel KSL-878</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://canonn.science/codex/demeter-class-agricultural-vessel/">Demeter Class Agricultural Vessel</a> designation KSL-878 was last reported in orbit of the planet Pleiades Sector HR-W d1-57 A 5.</p>
+<p>The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas&nbsp;throughout the area.</p>
+<p>A Ship Log Uplink point can be located on the hull. Deploy your ship&#8217;s hardpoints and use the onboard Data Link Scanner within 200m of the post to scan it and retrieve the log:</p>
+<blockquote><p><strong>COMMUNICATIONS LOG</strong></p>
+<p>I don&#8217;t care if we have no weapons, get me anything I can throw at this thing! Get some power to engines! If we can&#8217;t shoot it, maybe we can ram it.</p></blockquote>
+<p>A Thargoid Ship may still be in the area; if not, Medical and Emergency Aid ships will be present, rescuing the survivors.</p>
+<p>A number of Engineer Materials and Cargo Canisters are scattered nearby.</p>
+<p>&nbsp;</p>The post <a href="https://canonn.science/codex/demeter-class-agricultural-vessel-ksl-878/">Demeter Class Agricultural Vessel KSL-878</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Lowell Class Science Vessel HDR-617</title>
+		<link>https://canonn.science/codex/lowell-class-science-vessel-hdr-617/</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Tue, 10 Oct 2017 04:50:21 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Lowell-class]]></category>
+		<category><![CDATA[Megaship]]></category>
+		<category><![CDATA[Science Vessel (Megaship)]]></category>
+		<category><![CDATA[Thargoid Attack]]></category>
+		<category><![CDATA[Thargoid Interceptor]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=3866</guid>
+
+					<description><![CDATA[<p>The Lowell Class Science Vessel designation HDR-617 was last reported in orbit of the planet Pleiades Sector OI-T c3-7 B 8. The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas&#160;throughout the area. A Ship Log Uplink point can be located on...</p>
+The post <a href="https://canonn.science/codex/lowell-class-science-vessel-hdr-617/">Lowell Class Science Vessel HDR-617</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://canonn.science/codex/lowell-class-science-vessel/">Lowell Class Science Vessel</a> designation HDR-617 was last reported in orbit of the planet Pleiades Sector OI-T c3-7 B 8.</p>
+<p>The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas&nbsp;throughout the area.</p>
+<p>A Ship Log Uplink point can be located on the hull. Deploy your ship&#8217;s hardpoints and use the onboard Data Link Scanner within 200m of the post to scan it and retrieve the log:</p>
+<blockquote><p><strong>COMMUNICATIONS LOG</strong><br />
+It&#8217;s scanning our cargo hold Sir, like it&#8217;s looking for something.</p>
+<p>What did we pick up on the last stop?</p></blockquote>
+<p>A Thargoid Ship may still be in the area; if not, Medical and Emergency Aid ships will be present, rescuing the survivors.</p>
+<p>A number of Engineer Materials and Cargo Canisters are scattered nearby.</p>
+<p>&nbsp;</p>The post <a href="https://canonn.science/codex/lowell-class-science-vessel-hdr-617/">Lowell Class Science Vessel HDR-617</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Alcatraz Class Prison Ship JJF-048</title>
+		<link>https://canonn.science/codex/alcatraz-class-prison-ship-jjf-048/</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Tue, 10 Oct 2017 04:17:09 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Alcatraz-class]]></category>
+		<category><![CDATA[Megaship]]></category>
+		<category><![CDATA[Prison Ship (Megaship)]]></category>
+		<category><![CDATA[Thargoid Attack]]></category>
+		<category><![CDATA[Thargoid Interceptor]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=3861</guid>
+
+					<description><![CDATA[<p>The Alcatraz Class Prison Ship designation JJF-048 was last reported in orbit of the planet HIP 17692 A 3. The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas&#160;throughout the area. A Ship Log Uplink point can be located on the hull....</p>
+The post <a href="https://canonn.science/codex/alcatraz-class-prison-ship-jjf-048/">Alcatraz Class Prison Ship JJF-048</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://canonn.science/codex/alcatraz-class-prison-ship/">Alcatraz Class Prison Ship</a> designation JJF-048 was last reported in orbit of the planet HIP 17692 A 3.</p>
+<p>The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas&nbsp;throughout the area.</p>
+<p>A Ship Log Uplink point can be located on the hull. Deploy your ship&#8217;s hardpoints and use the onboard Data Link Scanner within 200m of the post to scan it and retrieve the log:</p>
+<blockquote><p><strong>COMMUNICATIONS LOG</strong><br />
+Until it&#8217;s confirmed hostile, do not do anything that it could see as a threat. I repeat &#8211; Do not engage! If we don&#8217;t provoke it, maybe it will just pass us by.</p></blockquote>
+<p>A Thargoid Ship may still be in the area; if not, Medical and Emergency Aid ships will be present, rescuing the survivors.</p>
+<p>A number of Engineer Materials and Cargo Canisters are scattered nearby.</p>
+<p>&nbsp;</p>The post <a href="https://canonn.science/codex/alcatraz-class-prison-ship-jjf-048/">Alcatraz Class Prison Ship JJF-048</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Aquarius-class Tanker ALF-895</title>
+		<link>https://canonn.science/codex/aquarius-class-tanker-alf-895/</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Wed, 04 Oct 2017 05:37:37 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Aquarius-class]]></category>
+		<category><![CDATA[Megaship]]></category>
+		<category><![CDATA[Tanker (Megaship)]]></category>
+		<category><![CDATA[Thargoid Attack]]></category>
+		<category><![CDATA[Thargoid Interceptor]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=3781</guid>
+
+					<description><![CDATA[<p>The Aquarius Class Tanker designation ALF-895 was last reported in orbit of the planet HIP 17225 A 2. The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas throughout the area. A Ship Log Uplink point can be located on the hull. Deploy...</p>
+The post <a href="https://canonn.science/codex/aquarius-class-tanker-alf-895/">Aquarius-class Tanker ALF-895</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://canonn.science/codex/aquarius-class-tanker/">Aquarius Class Tanker</a> designation ALF-895 was last reported in orbit of the planet HIP 17225 A 2.</p>
+<p>The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas throughout the area.</p>
+<p>A Ship Log Uplink point can be located on the hull. Deploy your ship&#8217;s hardpoints and use the onboard Data Link Scanner within 200m of the post to scan it and retrieve the log:</p>
+<blockquote><p><strong>COMMUNICATIONS LOG</strong><br />
+I don&#8217;t want to hear what we can&#8217;t do. I need solutions otherwise.</p>
+<p>That thing left us for dead, but I&#8217;m damned if I&#8217;m going out like this</p>
+<p>We&#8217;re going to split into teams and see what we can salvage. Start with the escape pods and see what we can get operational again.</p></blockquote>
+<p>A Thargoid Ship may still be in the area; if not, Medical and Emergency Aid ships will be present, rescuing the survivors.</p>
+<p>A number of Engineer Materials and Cargo Canisters are scattered nearby.</p>The post <a href="https://canonn.science/codex/aquarius-class-tanker-alf-895/">Aquarius-class Tanker ALF-895</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Thomas Class Bulk Cargo Ship DFX-056</title>
+		<link>https://canonn.science/codex/thomas-class-bulk-cargo-ship-dfx-056/</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Sun, 01 Oct 2017 05:15:40 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Bulk Cargo Ship]]></category>
+		<category><![CDATA[Megaship]]></category>
+		<category><![CDATA[Thargoid Attack]]></category>
+		<category><![CDATA[Thargoid Interceptor]]></category>
+		<category><![CDATA[Thomas-class]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=3673</guid>
+
+					<description><![CDATA[<p>The Thomas Class Bulk Cargo Ship DFX-056 was last reported in orbit of the moon Pleiades Sector IH-V c2-5 1 a. The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas&#160;throughout the area. A Ship Log Uplink point can be located on...</p>
+The post <a href="https://canonn.science/codex/thomas-class-bulk-cargo-ship-dfx-056/">Thomas Class Bulk Cargo Ship DFX-056</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://canonn.science/codex/thomas-class-bulk-cargo-ship/">Thomas Class Bulk Cargo Ship</a> DFX-056 was last reported in orbit of the moon Pleiades Sector IH-V c2-5 1 a.</p>
+<p>The ship is heavily damaged, destroyed by weapons consistent with other Thargoid attacks, leaving green hull scarring and some kind of green gas&nbsp;throughout the area.</p>
+<p>A Ship Log Uplink point can be located on the hull. Deploy your ship&#8217;s hardpoints and use the onboard Data Link Scanner within 200m of the post to scan it and retrieve the log:</p>
+<blockquote><p><strong>COMMUNICATIONS LOG</strong><br />
+We&#8217;ve been pulled out of hyperspace.</p>
+<p>Unknown vessel commencing scan, systems shut down. Preparing to get under way once scan complete.</p>
+<p>Wait&#8230; Wait&#8230; What&#8230; it&#8217;s charging something new&#8230;</p>
+<p>&#8230;Signal terminated at source&#8230;</p></blockquote>
+<p>A Thargoid Ship may still be in the area; if not, Medical and Emergency Aid ships will be present, rescuing the survivors.</p>
+<p>A number of Engineer Materials and Cargo Canisters are scattered nearby.</p>The post <a href="https://canonn.science/codex/thomas-class-bulk-cargo-ship-dfx-056/">Thomas Class Bulk Cargo Ship DFX-056</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Crashed Thargoid Ship #1</title>
+		<link>https://canonn.science/codex/crashed-thargoid-ship/</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Wed, 31 May 2017 21:05:00 +0000</pubDate>
+				<category><![CDATA[Cartographics & Exploration]]></category>
+		<category><![CDATA[Codex]]></category>
+		<category><![CDATA[Xeno-Technology]]></category>
+		<category><![CDATA[Crash Site]]></category>
+		<category><![CDATA[Crashed Thargoid Ship]]></category>
+		<category><![CDATA[Surface Site]]></category>
+		<category><![CDATA[Thargoid Interceptor]]></category>
+		<category><![CDATA[Thargoids]]></category>
+		<guid isPermaLink="false">https://canonn.science/?p=1618</guid>
+
+					<description><![CDATA[<p>The first Crashed Thargoid Ship to be discovered can be found on Pleiades Sector AB-W b2-4 body 9 a, located at 43.9385, -143.8448 (in Live/4.0) or at -26.3429, 97.7139 (in Legacy/3.8).</p>
+The post <a href="https://canonn.science/codex/crashed-thargoid-ship/">Crashed Thargoid Ship #1</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></description>
+										<content:encoded><![CDATA[<p>The first Crashed Thargoid Ship to be discovered can be found on Pleiades Sector AB-W b2-4 body 9 a, located at 43.9385, -143.8448 (in Live/4.0) or at -26.3429, 97.7139 (in Legacy/3.8).</p>
+<p>Clues to the&nbsp;existence and location of the ship were being given by the Granger Gang during <a href="https://canonn.science/codex/the-hunt/">The Hunt</a> mystery, however before all of the clues were revealed,&nbsp;CMDR Noctrach and CMDR Ihazevich discovered the ship and are for whom the nearby Imperial Research Facility is named.</p>
+
+
+<p></p>The post <a href="https://canonn.science/codex/crashed-thargoid-ship/">Crashed Thargoid Ship #1</a> first appeared on <a href="https://canonn.science">Canonn Research Group</a>.]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
